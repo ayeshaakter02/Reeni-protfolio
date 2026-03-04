@@ -18,9 +18,9 @@
 
 @layer components {
   .menu-item {
-    @apply font-bold text-base leading-7 text-chinese-black px-4 py-3.5
+    @apply font-bold text-base leading-7 text-chinese-black px-2 lg:px-3 xl:px-4 md:py-3.5
   }
   .menu-icons {
-    @apply w-10 h-10 py-3.25 px-[13.5px] rounded-full bg-light-gray text-sm leading-3.5 text-chinese-black font-normal
+    @apply p-[13px] rounded-full bg-light-gray lg:text-sm leading-3.5 text-chinese-black font-normal
   }
 }
