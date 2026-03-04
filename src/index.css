@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@theme {
+  --default-font-family: "Rajdhani", sans-serif;
+  --font-roboto: "Rubik", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-tomato: #FF494A;
+  --color-chinese-black: #141414;
+  --color-light-gray: #F4F4F4;
+}
+
+@layer base {
+  .container {
+    @apply max-w-326.25! mx-auto;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply font-bold text-base leading-7 text-chinese-black px-4 py-3.5
+  }
+  .menu-icons {
+    @apply w-10 h-10 py-3.25 px-[13.5px] rounded-full bg-light-gray text-sm leading-3.5 text-chinese-black font-normal
+  }
+}
