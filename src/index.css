@@ -23,4 +23,16 @@
   .menu-icons {
     @apply p-[13px] rounded-full bg-light-gray lg:text-sm leading-3.5 text-chinese-black font-normal
   }
+  .project-card {
+    @apply w-[296.25px] border border-tomato/16 rounded-[20px] text-center pt-[43.5px]
+  }
+  .project-img {
+    @apply w-12.5 h-12.5 mx-auto
+  }
+  .project-card-title {
+    @apply font-bold leading-8.5 text-2xl mt-7.5 mb-2.25
+  }
+  .project-card-para {
+    @apply font-normal text-base leading-6.5 font-rubik pb-10.25
+  }
 }
