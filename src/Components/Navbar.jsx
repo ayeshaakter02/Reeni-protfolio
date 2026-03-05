@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className=''>
     <nav className='container'>
-        <div className='flex justify-between md:gap-5 lg:gap-30 xl:gap-[200.87px]
+        <div className='flex justify-between md:gap-3 lg:gap-30 xl:gap-[200.87px]
  items-center py-2.5 px-3.75'>
             <img className='w-30' src="./src/assets/images/logo.png" alt="" />
             <ul className='lg:w-[503.25px] hidden md:flex justify-between items-center'>
@@ -56,12 +56,14 @@ const Navbar = () => {
             <li className='menu-item'><a href="#">Contact</a></li>
           </ul>
           {/* Mobile Social Icons */}
-          <ul className="flex gap-4 mt-4">
-            <FaInstagram className='menu-icons'/>
-            <FaLinkedinIn className='menu-icons'/>
-            <FaTwitter className='menu-icons'/>
-            <FaFacebookF className='menu-icons'/>
-          </ul>
+          <div className='lg:w-62.25 md:hidden justify-between'>
+              <ul className='flex gap-2'>
+              <li className='menu-icons'><FaInstagram /></li>
+              <li className='menu-icons'><FaLinkedinIn /></li>
+              <li className='menu-icons'><FaTwitter /></li>
+              <li className='menu-icons'><FaFacebookF /></li>
+            </ul>
+            </div>
         </div>
       )}
     </nav>
