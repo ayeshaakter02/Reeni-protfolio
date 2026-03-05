@@ -19,21 +19,21 @@ a businesses to help theme their performance efficiency
                 </div>
                 <div className="sm:flex gap-7.5">
                     <div>
-                        <div className='experience-rate'>
+                        <div className='experience-rate card-border'>
                             <h2 className='experience-rate-count'><span className='font-inter'>20</span>K+</h2>
                     <p className='experience-rate-para'>Our Project Complete</p>
                         </div>
-                        <div className='experience-rate mt-7.5'>
+                        <div className='experience-rate card-border mt-7.5'>
                             <h2 className='experience-rate-count font-inter'>200+</h2>
                     <p className='experience-rate-para'>Clients Reviews</p>
                         </div>
                     </div>
                     <div>
-                        <div className='experience-rate'>
+                        <div className='experience-rate card-border'>
                             <h2 className='experience-rate-count'><span className='font-inter'>10</span>K+</h2>
                     <p className='experience-rate-para'>Our Natural Products</p>
                         </div>
-                        <div className='experience-rate mt-7.5'>
+                        <div className='experience-rate card-border mt-7.5'>
                             <h2 className='experience-rate-count font-inter'>1,000+</h2>
                     <p className='experience-rate-para'>our Satisfied Clientd</p>
                         </div>

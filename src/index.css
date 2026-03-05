@@ -24,6 +24,7 @@
   .menu-icons {
     @apply p-3.25 rounded-full bg-light-gray lg:text-sm leading-3.5 text-chinese-black font-normal
   }
+  /* project */
   .project-card {
     @apply w-full sm:w-75 md:w-[296.25px] border border-tomato/16 rounded-[20px] text-center pt-[33.5px] md:pt-5 lg:pt-[43.5px] mt-7.5 sm:mt-0
   }
@@ -36,13 +37,24 @@
   .project-card-para {
     @apply font-normal text-base leading-6.5 font-rubik pb-7.75 md:pb-5 lg:pb-10.25
   }
+  /* experience */
+  .card-border {
+    @apply rounded-[20px] bg-light-gray border-r-2 border-b-2 border-tomato
+  }
   .experience-rate {
-    @apply mt-4 lg:mt-0 sm:px-8 xl:px-[61.13px] py-8 xl:pt-8.75 lg:pb-8 rounded-[20px] bg-light-gray border-r-2 border-b-2 border-red-500 text-center px-23.25
+    @apply mt-4 lg:mt-0 sm:px-8 xl:px-[61.13px] py-8 xl:pt-8.75 lg:pb-8  text-center px-23.25
   }
   .experience-rate-count {
     @apply font-bold text-chinese-black text-[48px] leading-15
   }
   .experience-rate-para {
     @apply font-rubik lg:text-[12px] xl:text-base leading-7.5 font-normal text-5Dgray
+  }
+  /* latest */
+  .latest-card-title {
+    @apply font-bold text-[24px] text-chinese-black leading-7.5
+  }
+  .latest-card-para {
+    @apply text-5Dgray mt-1.75 sm:mt-5.5 font-normal font-rubik text-base leading-[26ox]
   }
 }
