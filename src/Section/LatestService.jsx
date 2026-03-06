@@ -2,7 +2,7 @@ import React from "react";
 
 const LatestService = () => {
   return (
-    <section className="mt-15 lg:mt-[120.47px] mb-[30.3px] lg:mb-[90.5px] px-3.75 xl:px-0">
+    <section className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0">
       <div className="container mx-auto">
 
         {/* Heading */}

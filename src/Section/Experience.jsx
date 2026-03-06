@@ -17,7 +17,7 @@ const Experience = () => {
 a businesses to help theme their performance efficiency
                     </p>
                 </div>
-                <div className="sm:flex gap-7.5">
+                <div className="sm:flex gap-3 xl:gap-7.5">
                     <div>
                         <div className='experience-rate card-border'>
                             <h2 className='experience-rate-count'><span className='font-inter'>20</span>K+</h2>

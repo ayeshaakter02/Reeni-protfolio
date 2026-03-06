@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Project from './Section/Project'
 import Experience from './Section/Experience'
 import LatestService from './Section/LatestService'
+import SkillBar from './Section/SkillBar'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
     <Project/>
     <Experience/>
     <LatestService/>
+    <SkillBar/>
     </>
   )
 }
