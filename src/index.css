@@ -57,4 +57,16 @@
   .latest-card-para {
     @apply text-5Dgray mt-1.75 sm:mt-5.5 font-normal font-rubik text-base leading-[26ox]
   }
+  .ExperienceSection-exp {
+    @apply text-tomato font-medium text-base leading-7 font-rubik
+  }
+  .ExperienceSection-name {
+    @apply text-chinese-black text-2xl leading-7.5 font-bold
+  }
+  .ExperienceSection-dept {
+    @apply text-chinese-black font-medium leading-6.75 text-lg mt-1.5
+  }
+  .ExperienceSection-para {
+    @apply text-5Dgray mt-4 md:mt-2.5 xl:mt-4 font-normal font-rubik leading-7.5
+  }
 }

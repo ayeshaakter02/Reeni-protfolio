@@ -25,7 +25,7 @@ const data = [
 
 const Experience = () => {
   return (
-    <section className="pt-22.5 pb-18.25">
+    <section className="pt-22.5 pb-18.75">
       <div className="container mx-auto px-3.75">
         <div className="flex gap-[19.68px] mt-0.5 sm:mt-1">
             <h3 className="font-bold text-[32px] md:leading-10.5">Education</h3>
@@ -33,7 +33,7 @@ const Experience = () => {
                 <span className="w-1.5 h-1.5 bg-5Dgray rounded-full"></span>
                 <span className="w-17.25 h-0.5 bg-5Dgray"></span>
                 <span className="w-1.5 h-1.5 bg-5Dgray rounded-full"></span>
-              </div>
+            </div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-7.5 mt-7.5">

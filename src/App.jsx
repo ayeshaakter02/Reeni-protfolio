@@ -5,6 +5,7 @@ import ProjectExperience from './Section/ProjectExperience'
 import LatestService from './Section/LatestService'
 import SkillBar from './Section/SkillBar'
 import Experience from './Section/Experience'
+import ExperienceSection from './Section/ExperienceSection'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <LatestService/>
     <SkillBar/>
     <Experience/>
+    <ExperienceSection/>
     </>
   )
 }
