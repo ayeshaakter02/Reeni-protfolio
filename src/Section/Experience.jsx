@@ -1,48 +1,65 @@
-import React from 'react'
+import React from "react";
+
+const data = [
+  {
+    title: "Trainer Marketing",
+    year: "2005-2009",
+    desc: "A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience A personal portfolio.",
+  },
+  {
+    title: "Assistant Director",
+    year: "2010-2014",
+    desc: "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs.",
+  },
+  {
+    title: "Design Assistant",
+    year: "2008-2012",
+    desc: "I’ve had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.",
+  },
+  {
+    title: "Design Assistant",
+    year: "2008-2012",
+    desc: "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs a personal.",
+  },
+];
 
 const Experience = () => {
   return (
-    <div>
-        <div className="container px-3.75 mt-7.5">
-            <div className="lg:flex lg:gap-7.5 justify-center place-items-center">
-                <div className='max-w-[622.5px] pt-7.5 lg:pt-9 px-5 lg:px-13 bg-light-gray rounded-[20px]'>
-                    <div className="sm:flex max-h-51 gap-10 lg:gap-[65.61px] items-center">
-                        <div class="max-w-[185.78px] text-tomato text-[111.26px] md:text-[130px] xl:text-[160px] font-bold flex sm:justify-center sm:items-center font-inter">
-                            25
-                        </div>
-                        <h2 className='text-[26px] sm:text-4xl lg:text-[48.1px] font-bold leading-[33.8px] xl:leading-[62.6px] text-chinese-black sm:my-6 lg:my-[39.23px]'>Years Of experience</h2>
-                    </div>
-                    <p className='font-rubik md:text-sm xl:text-base font-normal text-chinese-black leading-6.5 pb-7.5 sm:pb-8 lg:pb-12.75 mt-3 sm:mt-0 lg:mt-3'>
-                        Business consulting consultants provide expert advice and guida the
-a businesses to help theme their performance efficiency
-                    </p>
-                </div>
-                <div className="sm:flex gap-3 xl:gap-7.5">
-                    <div>
-                        <div className='experience-rate card-border'>
-                            <h2 className='experience-rate-count'><span className='font-inter'>20</span>K+</h2>
-                    <p className='experience-rate-para'>Our Project Complete</p>
-                        </div>
-                        <div className='experience-rate card-border mt-7.5'>
-                            <h2 className='experience-rate-count font-inter'>200+</h2>
-                    <p className='experience-rate-para'>Clients Reviews</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='experience-rate card-border'>
-                            <h2 className='experience-rate-count'><span className='font-inter'>10</span>K+</h2>
-                    <p className='experience-rate-para'>Our Natural Products</p>
-                        </div>
-                        <div className='experience-rate card-border mt-7.5'>
-                            <h2 className='experience-rate-count font-inter'>1,000+</h2>
-                    <p className='experience-rate-para'>our Satisfied Clientd</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section className="pt-22.5 pb-18.25">
+      <div className="container mx-auto px-3.75">
+        <div className="flex gap-[19.68px] mt-0.5 sm:mt-1">
+            <h3 className="font-bold text-[32px] md:leading-10.5">Education</h3>
+            <div className="flex items-center">
+                <span className="w-1.5 h-1.5 bg-5Dgray rounded-full"></span>
+                <span className="w-17.25 h-0.5 bg-5Dgray"></span>
+                <span className="w-1.5 h-1.5 bg-5Dgray rounded-full"></span>
+              </div>
         </div>
-    </div>
-  )
-}
+        
+        <div className="grid md:grid-cols-2 gap-7.5 mt-7.5">
 
-export default Experience
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="card-border px-5 md:px-10 py-7 md:py-12 hover:shadow-lg transition"
+            >
+              <h3 className="text-chinese-black text-base font-normal leading-6.5 font-rubik">
+                {item.title}
+              </h3>
+
+              <h4 className="font-bold text-lg leading-7 text-chinese-black mt-1.25">{item.year}</h4>
+
+              <p className="text-5Dgray font-rubik font-normal text-base leading-7.5 mt-2 md:mt-4.5 mb-0.5">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
