@@ -24,6 +24,21 @@
   .menu-icons {
     @apply p-3.25 rounded-full bg-light-gray lg:text-sm leading-3.5 text-chinese-black font-normal
   }
+  .hero-heading {
+    @apply hidden xl:flex text-[150px] left-[9.9%] -mt-26 font-bold leading-[172.5px] absolute z-30 text-center [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1.25px] [-webkit-text-stroke-color:tomato]
+  }
+  .hero-heading2 {
+    @apply hidden xl:flex w-267.75 leading-[244.8px] text-5Dgray [-webkit-text-fill-color:white] [-webkit-text-stroke-width:1.25px] [-webkit-text-stroke-color:5Dgray] text-[212.9px] font-bold absolute left-[52.5%] top-[87.4%] z-10 -translate-x-1/2 -translate-y-1/2
+  }
+  .contact-icons {
+    @apply w-[45px] h-[45px] rounded-[5px] p-[12.5px] border border-[#D9DDE0]
+  }
+  .contact {
+    @apply text-tomato text-[15px] font-semibold leading-[26.3px]
+  }
+  .contact-address {
+    @apply font-rubik font-normal text-base leading-7 text-chinese-black
+  }
   /* project */
   .project-card {
     @apply w-full sm:w-75 md:w-[296.25px] border border-tomato/16 rounded-[20px] text-center pt-[33.5px] md:pt-5 lg:pt-[43.5px] mt-7.5 sm:mt-0
@@ -93,3 +108,6 @@
     @apply w-11.5 h-11.5 border border-[#D9DDE0] rounded-[10px] flex items-center justify-center text-chinese-black transition
   }
 }
+
+
+

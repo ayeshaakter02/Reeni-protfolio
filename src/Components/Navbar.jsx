@@ -63,7 +63,7 @@ const Navbar = () => {
               <li className='menu-icons'><FaTwitter /></li>
               <li className='menu-icons'><FaFacebookF /></li>
             </ul>
-            </div>
+          </div>
         </div>
       )}
     </nav>

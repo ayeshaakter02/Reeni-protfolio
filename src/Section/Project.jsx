@@ -3,8 +3,8 @@ import React from 'react'
 const project = () => {
   return (
     <div>
-      <div className="container px-3.75 my-7.5 lg:my-22.5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:flex justify-center place-items-center gap-2.5 lg:gap-7.5 mt-7.5">
+      <div className="container px-3.75 py-7.5 xl:mt-121.75 lg:pb-22.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:flex justify-center place-items-center gap-2.5  lg:gap-7.5 xl:pt-7.5">
           <div className='project-card'>
             <img className='project-img' src="./src/assets/images/web-design.png" alt="" />
             <h2 className='project-card-title'>Web Design</h2>
