@@ -57,6 +57,7 @@
   .latest-card-para {
     @apply text-5Dgray mt-1.75 sm:mt-5.5 font-normal font-rubik text-base leading-[26ox]
   }
+  /* ExperienceSection */
   .ExperienceSection-exp {
     @apply text-tomato font-medium text-base leading-7 font-rubik
   }
@@ -68,5 +69,27 @@
   }
   .ExperienceSection-para {
     @apply text-5Dgray mt-4 md:mt-2.5 xl:mt-4 font-normal font-rubik leading-7.5
+  }
+  /* Protfolio */
+  .Protfolio-latest {
+    @apply text-tomato text-base tracking-[1px] leading-7 font-medium font-rubik uppercase
+  }
+  .Protfolio-heading {
+    @apply text-chinese-black text-3xl md:text-5xl font-bold leading-15 mt-1.25
+  }
+  .Protfolio-para {
+    @apply max-w-156.75 mx-auto text-5Dgray font-rubik font-normal text-base leading-6.5 mt-[9.5px] mb-[82px]
+  }
+  .Protfolio-img-card {
+    @apply p-5 rounded-[20px] border border-[#D9DDE0]
+  }
+  .Protfolio-title {
+    @apply text-chinese-black text-xl xl:text-2xl leading-7.5 font-bold mb-[10.24px]
+  }
+  .Protfolio-category {
+    @apply text-5Dgray text-base font-normal font-rubik leading-7.5
+  }
+  .Protfolio-btn {
+    @apply w-11.5 h-11.5 border border-[#D9DDE0] rounded-[10px] flex items-center justify-center text-chinese-black transition
   }
 }
