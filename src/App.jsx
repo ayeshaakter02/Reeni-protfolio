@@ -10,6 +10,7 @@ import Companies from './Section/Companies'
 import Portfolio from './Section/Protfolio'
 import Hero from './Section/Hero'
 import ThemeProvider from './provider/ThemeProviver'
+import MySkill from './Section/MySkill'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
     <ExperienceSection/>
     <Companies/>
     <Portfolio className="bg-light-gray"/>
+    <MySkill/>
     </div>
     </ThemeProvider>
     
