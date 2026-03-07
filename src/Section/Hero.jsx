@@ -28,11 +28,11 @@ const Hero = () => {
               className="w-100 bg-light-gray pl-7.5 pr-11.25"
             >
               <div className="h-18 w-96.25 bg-[#EDEDED] items-center flex gap-46">
-                <img src="./src/assets/images/logo.png" alt="" />
-                <button onClick={() => setOpen(!open)} className="w-10 h-10 rounded-full bg-5Dgray justify-center items-center flex"><RxCross1 /></button>
+                <img src="/src/assets/images/logo.png" alt="" />
+                <button onClick={() => setOpen(!open)} className="cursor-pointer w-10 h-10 rounded-full bg-5Dgray justify-center items-center flex"><RxCross1 /></button>
               </div>
               <div className="justify-start">
-                <img className="my-7.5" src="./src/assets/images/link.png" alt="" />
+                <img className="my-7.5" src="/src/assets/images/link.png" alt="" />
                 <h2 className="font-rubik text-[20px] font-bold leading-7.5 text-chinese-black">Freelancer delivering exceptional Webflow, and Next.js solutions.</h2>
                 <p className="mt-[19.4px] mb-[38.98px] font-rubik text-base font-normal leading-[25.6px] text-5Dgray">I am a skilled freelancer specializing in Webflow development, Figma design, and Next.js projects. I deliver creative, dynamic, and user-centric web solutions.</p>
                 <div>
@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
           <button
             onClick={() => setOpen(!open)}
-            className="w-13.75 h-13.75 rounded-full text-white bg-tomato right-5 top-[82%] -translate-y-1/2 z-50 flex justify-center items-center fixed"
+            className="w-13.75 h-13.75 rounded-full cursor-pointer text-white bg-tomato right-5 top-[82%] -translate-y-1/2 z-50 flex justify-center items-center fixed"
           >
             <FaFacebookMessenger />
           </button>
@@ -87,7 +87,7 @@ const Hero = () => {
             {/* Bottom Green Icon */}
             <div className="bg-[#48b04d] flex items-center justify-center px-2.5 py-3.75">
               <img
-                src="./src/assets/images/SVG.png"
+                src="/src/assets/images/SVG.png"
                 alt="logo"
                 className="w-5.5 h-5.5"
               />
@@ -101,7 +101,7 @@ const Hero = () => {
           <div className="w-full xl:w-239 mx-auto flex justify-center relative z-20 bg-cover">
             <img
               className="lg:w-[637.5px] lg:h-[805.9px] shadow-x-2xl"
-              src="./src/assets/images/hero.png"
+              src="/src/assets/images/hero.png"
               alt=""
             />
           </div>
@@ -116,7 +116,7 @@ const Hero = () => {
             <h1 className="font-bold text-[38px] lg:text-[90px] leading-12 lg:leading-[103.5px]">
               Brooklyn Simmons
             </h1>
-            <button className="mt-2.5 lg:mt-5 w-[194.42px] rounded-full text-white px-7.5 font-rubik font-medium text-base leading-15 tracking-[0.5px] bg-tomato flex items-center">
+            <button className="cursor-pointer mt-2.5 lg:mt-5 w-[194.42px] rounded-full text-white px-7.5 font-rubik font-medium text-base leading-15 tracking-[0.5px] bg-tomato flex items-center">
               View Portfolio
               <span>
                 <IoArrowForwardOutline />

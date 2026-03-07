@@ -30,8 +30,8 @@ const App = () => {
     <Experience/>
     <ExperienceSection/>
     <Companies/>
-    <Portfolio className="bg-light-gray"/>
-    <MySkill/>
+    <Portfolio className="bg-light-gray "/>
+    <MySkill className="bg-light-gray text-chinese-black"/>
     <Pricing/>
     <Testimonial/>
     <Blog/>

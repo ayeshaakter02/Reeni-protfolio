@@ -1,14 +1,14 @@
 import React from "react";
 
 const companies = [
-  { name: "Linear", logo: "./src/assets/images/linear.png" },
-  { name: "Framer", logo: "./src/assets/images/framer.png" },
-  { name: "Notion", logo: "./src/assets/images/notion.png" },
-  { name: "Slack", logo: "./src/assets/images/slack.png" },
-  { name: "Medium", logo: "./src/assets/images/medium.png" },
-  { name: "Upwork", logo: "./src/assets/images/upwork.png" },
-  { name: "Amazon", logo: "./src/assets/images/amazon.png" },
-  { name: "Asana", logo: "./src/assets/images/asana.png" },
+  { name: "Linear", logo: "/src/assets/images/linear.png" },
+  { name: "Framer", logo: "/src/assets/images/framer.png" },
+  { name: "Notion", logo: "/src/assets/images/notion.png" },
+  { name: "Slack", logo: "/src/assets/images/slack.png" },
+  { name: "Medium", logo: "/src/assets/images/medium.png" },
+  { name: "Upwork", logo: "/src/assets/images/upwork.png" },
+  { name: "Amazon", logo: "/src/assets/images/amazon.png" },
+  { name: "Asana", logo: "/src/assets/images/asana.png" },
 ];
 
 const Companies = () => {

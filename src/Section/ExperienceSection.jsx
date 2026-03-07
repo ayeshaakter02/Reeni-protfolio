@@ -10,7 +10,7 @@ const ExperienceSection = () => {
           {/* Left Image */}
           <div className="w-full flex justify-center">
             <img
-              src="./src/assets/images/experience.png"
+              src="/src/assets/images/experience.png"
               alt="experience"
               className="rounded-[20px] lg:max-w-[622.5px] object-cover"
             />

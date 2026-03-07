@@ -7,11 +7,11 @@ const LatestService = () => {
 
         {/* Heading */}
         <div className="text-center mb-15">
-          <p className="text-tomato text-base font-medium leading-7 uppercase font-rubik tracking-[1px]">
+          <p className="common-title">
             Latest Service
           </p>
 
-          <h2 className="text-[22px] sm:text-3xl md:text-[48px] mt-1.25 font-bold leading-[30.8px] md:leading-15">
+          <h2 className="common-heading">
             Inspiring The World One Project
           </h2>
 
@@ -64,7 +64,7 @@ businesses to help theme their performance efficiency
 
           {/* Right Side Image */}
           <div className="mt-7.5 lg:mt-0">
-            <img src="./src/assets/images/latest-user-image.png" alt="" />
+            <img src="/src/assets/images/latest-user-image.png" alt="" />
           </div>
 
         </div>

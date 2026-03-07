@@ -74,6 +74,12 @@
   .contact-address {
     @apply font-rubik font-normal text-base leading-7
   }
+  .common-title {
+    @apply text-center text-base font-medium font-rubik leading-7 text-tomato mb-1.25 uppercase
+  }
+  .common-heading {
+    @apply text-center text-3xl md:text-5xl font-bold leading-15
+  }
   /* project */
   .project-card {
     @apply w-full sm:w-75 md:w-[296.25px] border border-tomato/16 rounded-[20px] text-center pt-[33.5px] md:pt-5 lg:pt-[43.5px] mt-7.5 sm:mt-0

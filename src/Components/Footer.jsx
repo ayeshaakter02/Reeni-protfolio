@@ -3,15 +3,16 @@ import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="container pt-20 xl:pt-52.5 pb-30 px-4">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-12">
+    <div className="bg-light-gray">
+      <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
+      <div className="flex justify-between">
 
         {/* LEFT */}
         <div>
-          <img src="./src/assets/images/logo.png" alt="logo" className="mb-6 w-32" />
+          <img src="/src/assets/images/logo.png" alt="logo" className="mb-5.5 w-32" />
 
-          <h2 className="text-4xl font-bold leading-snug mb-10">
-            Get Ready To <br /> Create Great
+          <h2 className="text-[50px] font-bold leading-15 mb-10">
+            Get Ready To <br /> <span className="font-light">Create Great</span>
           </h2>
 
           {/* email input */}
@@ -19,73 +20,73 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Adress"
-              className="bg-transparent outline-none flex-1 text-sm"
+              className="bg-transparent outline-none flex-1 text-base font-normal font-rubik text-5Dgray"
             />
-            <FaEnvelope className="text-gray-500" />
+            <FaEnvelope />
           </div>
         </div>
 
         {/* QUICK LINKS */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-6">
+          <h3 className="text-2xl font-bold leading-7.5 mb-10">
             Quick Link
           </h3>
 
-          <ul className="space-y-4">
-            <li className="cursor-pointer">About Me</li>
-            <li className="cursor-pointer">Service</li>
-            <li className="cursor-pointer">Contact Us</li>
-            <li className="cursor-pointer">Blog Post</li>
-            <li className="cursor-pointer">Pricing</li>
+          <ul className="space-y-2">
+            <li className="cursor-pointer font-rubik text-base font-normal leading-7.5">About Me</li>
+            <li className="cursor-pointer font-rubik text-base font-normal leading-7.5">Service</li>
+            <li className="cursor-pointer font-rubik text-base font-normal leading-7.5">Contact Us</li>
+            <li className="cursor-pointer font-rubik text-base font-normal leading-7.5">Blog Post</li>
+            <li className="cursor-pointer font-rubik text-base font-normal leading-7.5">Pricing</li>
           </ul>
         </div>
 
         {/* CONTACT */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-6">
+          <h3 className="text-2xl font-bold leading-7.5 mb-10">
             Contact
           </h3>
 
-          <div className="space-y-6">
+          <div className="space-y-3.75">
 
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center">
+            <div className="flex items-center gap-2.5">
+              <div className="w-10 h-10 border-2 border-[#D9DDE0] rounded-full flex items-center justify-center">
                 <FaEnvelope />
               </div>
-              <p>nafiz125@gmail.com</p>
+              <p className="font-rubik font-normal text-base leading-07.5">nafiz125@gmail.com</p>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 border-2 border-[#D9DDE0] rounded-full flex items-center justify-center">
                 <FaMapMarkerAlt />
               </div>
-              <p>3891 Ranchview Dr. Richardson</p>
+              <p className="font-rubik font-normal text-base leading-07.5">3891 Ranchview Dr. Richardson</p>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 border-2 border-[#D9DDE0] rounded-full flex items-center justify-center">
                 <FaPhoneAlt />
               </div>
-              <p>01245789321</p>
+              <p className="font-rubik font-normal text-base leading-07.5">01245789321</p>
             </div>
 
           </div>
 
           {/* social icons */}
-          <div className="flex gap-4 mt-8">
-            <div className="menu-icons">
+          <div className="flex gap-4 mt-7.5">
+            <div className="menu-icons bg-[#0A0A0A0F]">
               <FaInstagram />
             </div>
 
-            <div className="menu-icons">
+            <div className="menu-icons bg-[#0A0A0A0F]">
               <FaLinkedinIn />
             </div>
 
-            <div className="menu-icons">
+            <div className="menu-icons bg-[#0A0A0A0F]">
               <FaTwitter />
             </div>
 
-            <div className="menu-icons">
+            <div className="menu-icons bg-[#0A0A0A0F]">
               <FaFacebookF />
             </div>
           </div>
@@ -93,6 +94,7 @@ const Footer = () => {
 
       </div>
     </footer>
+    </div>
   );
 };
 

@@ -3,64 +3,62 @@ import { SiComma } from "react-icons/si";
 
 const Testimonial = () => {
   return (
-    <section className="container py-10 lg:py-30 px-3.75">
+    <section className="container px-3.75">
       
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-red-500 font-semibold tracking-widest uppercase">
+        <p className="common-title">
           Our Testimonial
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-700 mt-3">
+        <h2 className="common-heading mb-15">
           Enhancing Collaboration <br /> between Remote
         </h2>
       </div>
 
       {/* Cards */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-7.5">
 
         {/* Card 1 */}
-        <div className="bg-gray-200 rounded-3xl p-8 relative border-b-4 border-red-500">
+        <div className="bg-light-gray rounded-3xl pt-9.5 pl-9.5 pb-[38.39px] relative border-b-4 border-red-500">
             <div className="flex">
-                <SiComma className="text-red-500 text-4xl mb-6 rotate-180" />
-          <SiComma className="text-red-500 text-4xl mb-6 rotate-180" />
+                <img src="/src/assets/images/testimonial-icon.png" alt="" />
             </div>
           
 
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <p className="text-5Dgray leading-[30.6px] font-normal text-lg font-rubik mt-[42.39px] mb-[36.98px]">
             A personal portfolio is a curated collection of an individual's
             professional work, showcasing their skills. A personal portfolio
             is a curated collection of an individual's professional work.
           </p>
 
-          <h4 className="font-semibold text-gray-900">
+          <h4 className="font-bold text-lg leading-[20.5px]">
             Cameron Williamson
           </h4>
 
-          <p className="text-gray-500 text-sm">
+          <p className="font-rubik text-sm leading-[22.4px] font-normal text-5Dgray mt-2.75">
             Ui/Ux Designer
           </p>
         </div>
 
         {/* Card 2 */}
-        <div className="bg-gray-200 rounded-3xl p-8 relative border-b-4 border-red-500">
+        <div className="bg-light-gray rounded-3xl p-8 relative border-b-4 border-red-500">
 
           <div className="flex">
-                <SiComma className="text-red-500 text-4xl mb-6 rotate-180" />
-          <SiComma className="text-red-500 text-4xl mb-6 rotate-180" />
+                <img src="/src/assets/images/testimonial-icon.png" alt="" />
             </div>
 
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <p className="text-5Dgray leading-[30.6px] font-normal text-lg font-rubik mt-[42.39px] mb-[36.98px]">
             A personal portfolio is a curated collection of an individual's
             professional work, showcasing their skills. A personal portfolio
             is a curated collection of an individual's professional work.
           </p>
 
-          <h4 className="font-semibold text-gray-900">
+          <h4 className="font-bold text-lg leading-[20.5px]">
             Cameron Williamson
           </h4>
 
-          <p className="text-gray-500 text-sm">
+          <p className="font-rubik text-sm leading-[22.4px] font-normal text-5Dgray mt-2.75">
             Ui/Ux Designer
           </p>
         </div>

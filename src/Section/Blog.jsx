@@ -4,29 +4,29 @@ import { FaCalendarAlt } from "react-icons/fa";
 const Blog = () => {
   const blogs = [
     {
-      img: "./src/assets/images/blog1.png",
+      img: "/src/assets/images/blog1.png",
       title: "Let's bring your ideas to life! Contact me, and let's",
     },
     {
-      img: "./src/assets/images/blog2.png",
+      img: "/src/assets/images/blog2.png",
       title: "Inspiring the World, One Project at a Time for the man",
     },
     {
-      img: "./src/assets/images/blog3.png",
+      img: "/src/assets/images/blog3.png",
       title: "Each one showcases my approach and dedication man",
     },
   ];
 
   return (
-    <section className="container px-3.75">
+    <section className="container py-30 px-3.75">
 
       {/* heading */}
-      <div className="text-center mb-14">
-        <p className="text-red-500 font-semibold tracking-widest uppercase">
+      <div className="text-center">
+        <p className="common-title">
           Blog and News
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-700 mt-3">
+        <h2 className="common-heading  mb-15">
           Elevating Personal Branding the <br />
           through Powerful Portfolios
         </h2>
@@ -46,18 +46,18 @@ const Blog = () => {
               <img
                 src={blog.img}
                 alt="blog"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 rounded-2xl object-cover"
               />
 
             </div>
 
             {/* content */}
-            <div className="p-6">
-              <h3 className="text-lg font-semibold mb-6">
+            <div className="py-[30.34px] pl-7.5">
+              <h3 className="font-bold leading-7.5 text-2xl">
                 {blog.title}
               </h3>
 
-              <button className="text-5Dgray text-sm font-medium flex items-center gap-2 group-hover:text-white transition">
+              <button className="cursor-pointer text-5Dgray font-rubik text-[13px] font-normal leading-6.75 mt-4 flex items-center gap-2 transition">
                 READ MORE →
               </button>
             </div>

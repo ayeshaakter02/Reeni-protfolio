@@ -13,7 +13,7 @@ const Portfolio = () => {
             Transforming Ideas into Exceptional
           </h2>
 
-          <p className="Protfolio-para mb-15">
+          <p className="Protfolio-para mt-[9.5px] mb-15">
             Business consulting consultants provide expert advice and guida
             businesses to help them improve their performance, efficiency, and
             organizational
@@ -26,7 +26,7 @@ const Portfolio = () => {
           <div>
             <div className="Protfolio-img-card">
               <img
-                src="./src/assets/images/portfolio1.png"
+                src="/src/assets/images/portfolio1.png"
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -48,7 +48,7 @@ const Portfolio = () => {
           <div className="mt-7.5 xl:mt-25 xl:ml-1">
             <div className="Protfolio-img-card">
               <img
-                src="./src/assets/images/portfolio2.png"
+                src="/src/assets/images/portfolio2.png"
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -70,7 +70,7 @@ const Portfolio = () => {
           <div>
             <div className="Protfolio-img-card">
               <img
-                src="./src/assets/images/portfolio3.png"
+                src="/src/assets/images/portfolio3.png"
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -92,7 +92,7 @@ const Portfolio = () => {
           <div className="xl:mt-25">
             <div className="Protfolio-img-card">
               <img
-                src="./src/assets/images/portfolio4.png"
+                src="/src/assets/images/portfolio4.png"
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />

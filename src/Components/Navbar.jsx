@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className='container'>
         <div className='flex justify-between md:gap-3 lg:gap-28 xl:gap-[200.87px]
  items-center py-2.5 px-3.75'>
-            <img className='w-30' src="./src/assets/images/logo.png" alt="" />
+            <img className='w-30' src="/src/assets/images/logo.png" alt="" />
             <ul className='lg:w-[503.25px] hidden md:flex justify-between items-center'>
               <li className='menu-item'><a href="#">Home</a></li>
               <li className='menu-item'><a href="#">About</a></li>
@@ -29,24 +29,24 @@ const Navbar = () => {
               <li className='menu-item'><a className='flex justify-center items-center' href="#">Project <IoIosArrowDown className='ml-0.75'/></a></li>
               <li className='menu-item'><a href="#">Contact</a></li>
             </ul>
-            <div className='lg:w-62.25 hidden md:flex justify-between'>
-              <ul className='flex gap-2'>
+            <div className='lg:w-62.25 md:flex justify-between'>
+              <ul className='md:flex gap-2 hidden '>
               <li className='menu-icons'><FaInstagram /></li>
               <li className='menu-icons'><FaLinkedinIn /></li>
               <li className='menu-icons'><FaTwitter /></li>
               <li className='menu-icons'><FaFacebookF /></li>
             </ul>
-                        <div className='flex gap-1'>
+                        <div className='ml-45 md:ml-0'>
               <button
       onClick={toggleTheme}
-      className="menu-icons bg-primary text-text-invert"
+      className="menu-icons cursor-pointer bg-primary text-text-invert"
     >
       {theme === "dark" ? <IoSunny /> : <FaMoon />}
     </button>
             </div>
             </div>
             <button
-            className="menu-icons flex md:hidden bg-tomato text-white"
+            className="menu-icons cursor-pointer flex md:hidden bg-tomato text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             <CgMenuRightAlt />

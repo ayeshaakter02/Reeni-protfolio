@@ -14,7 +14,6 @@ export default function Pricing() {
     {
       name: "Basic",
       price: "$ 230.00",
-      highlight: true,
       features: [
         "5 Social Media Account",
         "Free Platform Access",
@@ -38,42 +37,37 @@ export default function Pricing() {
     <section className="container py-10 lg:py-30 px-2 lg:px-3.75">
 
       {/* heading */}
-      <p className="text-red-500 text-sm text-center mb-4">
+      <p className="common-title">
         MY PRICE PLAN
       </p>
 
-      <h2 className="text-center text-3xl md:text-5xl font-bold mb-16 max-w-3xl mx-auto">
+      <h2 className="common-heading  mb-15">
         Enhancing Collaboration between Remote
       </h2>
 
       {/* cards */}
-      <div className="grid lg:grid-cols-3 gap-10 items-center">
+      <div className="grid lg:grid-cols-3 gap-10">
 
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-3xl p-10 transition-all duration-300
-            ${
-              plan.highlight
-                ? "bg-[#e9e9e9] text-black border border-red-500 scale-105"
-                : "bg-[#e9e9e9] text-black border border-transparent"
-            }`}
+            className={`rounded-3xl mt-[73px] pt-[37.72px] pl-[38px] pb-[37.28px] bg-[#e9e9e9] text-black  
+hover:border-r-2 hover:border-b-2 hover:border-tomato hover:scale-110 hover:shadow-xl 
+transition-all duration-300`}
           >
 
             {/* title */}
-            <h3 className="text-lg font-semibold mb-4">{plan.name}</h3>
+            <h3 className="text-lg font-bold leading-6.75 mb-0.5">{plan.name}</h3>
 
             {/* price */}
-            <h2 className="text-4xl font-bold mb-2">{plan.price}</h2>
-            <p className="text-sm mb-8">Per Month</p>
-
-            <div className="border-b mb-8"></div>
+            <h2 className="text-5xl font-bold mb-0.5 leading-15">{plan.price}</h2>
+            <p className="text-lg font-bold leading-6.75">Per Month</p>
 
             {/* features */}
-            <ul className="space-y-4 mb-10">
+            <ul className="space-y-3.75 mt-10.75">
 
               {plan.features.map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-gray-600">
+                <li key={i} className="flex items-center gap-2.5 text-5Dgray font-rubik text-base font-normal leading-6">
 
                   <span className="bg-red-500 text-white rounded-full p-1">
                     <FaCheck size={10} />
@@ -87,12 +81,7 @@ export default function Pricing() {
 
             {/* button */}
             <button
-              className={`flex items-center gap-2 px-6 py-3 rounded-full border
-              ${
-                plan.highlight
-                  ? "bg-red-500 text-white border-red-500"
-                  : "border-gray-400"
-              }`}
+              className="mt-10 flex cursor-pointer items-center gap-[0.1px] font-rubik font-medium text-sm leading-11.75 tracking-[0.5px] px-6 py-3 rounded-full border border-[#D9DDE0] hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
             >
               Get Started
               <FaArrowRight />
