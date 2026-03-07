@@ -14,6 +14,7 @@ import MySkill from './Section/MySkill'
 import Pricing from './Section/Pricing'
 import Testimonial from './Section/Testimonial'
 import Blog from './Section/Blog'
+import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
     <Pricing/>
     <Testimonial/>
     <Blog/>
+    <Footer/>
     </div>
     </ThemeProvider>
     
