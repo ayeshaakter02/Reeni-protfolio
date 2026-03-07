@@ -73,19 +73,19 @@ const Footer = () => {
 
           {/* social icons */}
           <div className="flex gap-4 mt-8">
-            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-500 cursor-pointer">
+            <div className="menu-icons">
               <FaInstagram />
             </div>
 
-            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-500 cursor-pointer">
+            <div className="menu-icons">
               <FaLinkedinIn />
             </div>
 
-            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-500 cursor-pointer">
+            <div className="menu-icons">
               <FaTwitter />
             </div>
 
-            <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-500 cursor-pointer">
+            <div className="menu-icons">
               <FaFacebookF />
             </div>
           </div>
