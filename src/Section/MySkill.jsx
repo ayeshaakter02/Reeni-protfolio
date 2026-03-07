@@ -24,7 +24,7 @@ export default function MySkill() {
   ];
 
   return (
-    <section className="pt-10 lg:pt-30 pb-5 lg:pb-25 px-3.75">
+    <section className="container pt-10 lg:pt-30 pb-5 lg:pb-25 px-3.75">
 
       {/* heading */}
       <p className="text-red-500 text-sm font-semibold mb-4">MY SKILL</p>
