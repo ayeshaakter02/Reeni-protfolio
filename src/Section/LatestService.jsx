@@ -11,7 +11,7 @@ const LatestService = () => {
             Latest Service
           </p>
 
-          <h2 className="text-[22px] sm:text-3xl md:text-[48px] mt-1.25 font-bold text-chinese-black leading-[30.8px] md:leading-15">
+          <h2 className="text-[22px] sm:text-3xl md:text-[48px] mt-1.25 font-bold leading-[30.8px] md:leading-15">
             Inspiring The World One Project
           </h2>
 

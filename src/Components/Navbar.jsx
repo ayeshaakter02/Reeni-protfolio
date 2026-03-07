@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { FaMoon } from "react-icons/fa";
+import { IoSunny } from "react-icons/io5";
+import { useTheme } from '../provider/ThemeProviver';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+   const { theme, handleTheme } = useTheme();
+
+  const toggleTheme = () => {
+    handleTheme(theme === "dark" ? "light" : "dark");
+  };
+
 
   return (
     <div className=''>
@@ -27,6 +36,14 @@ const Navbar = () => {
               <li className='menu-icons'><FaTwitter /></li>
               <li className='menu-icons'><FaFacebookF /></li>
             </ul>
+                        <div className='flex gap-1'>
+              <button
+      onClick={toggleTheme}
+      className="menu-icons bg-primary text-text-invert"
+    >
+      {theme === "dark" ? <IoSunny /> : <FaMoon />}
+    </button>
+            </div>
             </div>
             <button
             className="menu-icons flex md:hidden bg-tomato text-white"

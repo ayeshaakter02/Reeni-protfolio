@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Portfolio = () => {
   return (
-    <section className="bg-light-gray pt-25 pb-30">
+    <section className="pt-25 pb-30">
       <div className="container px-3.75">
         {/* Section Title */}
         <div className="text-center">

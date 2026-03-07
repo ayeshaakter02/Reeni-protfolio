@@ -10,7 +10,7 @@ const skills = [
 const SkillBar = ({ name, percent }) => {
   return (
     <div className="mb-7.5 max-w-[622.5px]">
-      <h4 className="text-chinese-black leading-[17.5px] font-normal font-rubik tracking-[1px] text-sm mb-3.75">{name}</h4>
+      <h4 className="leading-[17.5px] font-normal font-rubik tracking-[1px] text-sm mb-3.75">{name}</h4>
 
       <div className="relative p-0.75 bg-light-gray h-3.25 rounded-[10px]">
 
@@ -22,7 +22,7 @@ const SkillBar = ({ name, percent }) => {
 
         {/* Percentage */}
         <span
-          className="absolute -top-8 text-sm text-chinese-black font-normal font-rubik leading-[24.5px]"
+          className="absolute -top-8 text-sm font-normal font-rubik leading-[24.5px]"
           style={{ left: `${percent}%`, transform: "translateX(-110%)" }}
         >
           {percent}%
@@ -43,7 +43,7 @@ const Skills = () => {
           {/* Design Skill */}
           <div>
             <div className="flex items-center gap-[19.68px] mb-7.5">
-              <h2 className="text-chinese-black text-[32px] leading-10.5 font-bold">
+              <h2 className=" text-[32px] leading-10.5 font-bold">
                 Design Skill
               </h2>
 
@@ -62,7 +62,7 @@ const Skills = () => {
           {/* Development Skill */}
           <div>
             <div className="flex items-center gap-4 mb-7.5 ">
-              <h2 className="text-chinese-black text-[32px] leading-10.5 font-bold">
+              <h2 className="text-[32px] leading-10.5 font-bold">
                 Development Skill
               </h2>
 

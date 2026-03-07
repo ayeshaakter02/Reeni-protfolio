@@ -9,11 +9,13 @@ import ExperienceSection from './Section/ExperienceSection'
 import Companies from './Section/Companies'
 import Portfolio from './Section/Protfolio'
 import Hero from './Section/Hero'
+import ThemeProvider from './provider/ThemeProviver'
 
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider>
+      <div className='bg-bg text-text'>
     <Navbar/>
     <Hero/>
     <Project/>
@@ -23,8 +25,10 @@ const App = () => {
     <Experience/>
     <ExperienceSection/>
     <Companies/>
-    <Portfolio/>
-    </>
+    <Portfolio className="bg-light-gray"/>
+    </div>
+    </ThemeProvider>
+    
   )
 }
 

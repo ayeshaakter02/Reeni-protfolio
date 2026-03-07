@@ -21,7 +21,7 @@ const ExperienceSection = () => {
 
             {/* Title */}
             <div className="flex items-center gap-4 mb-8 sm:mb-4 xl:mb-8">
-              <h2 className="text-chinese-black text-[32px] leading-10.5 font-bold">
+              <h2 className="text-[32px] leading-10.5 font-bold">
                 Experiences
               </h2>
 

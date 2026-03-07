@@ -110,10 +110,10 @@ const Hero = () => {
         </div>
         <div className="sm:flex justify-between place-items-center xl:gap-[558.75px] mt-5 xl:mt-48 mx-20 lg:mx-0">
           <div className="w-101.25">
-            <h2 className="font-bold text-xl lg:text-[28px] leading-9.5 text-chinese-black uppercase mt-7.5 md:mt-0">
+            <h2 className="font-bold text-xl lg:text-[28px] leading-9.5 uppercase mt-7.5 md:mt-0">
               Hello i’m
             </h2>
-            <h1 className="font-bold text-[38px] lg:text-[90px] leading-12 lg:leading-[103.5px] text-chinese-black">
+            <h1 className="font-bold text-[38px] lg:text-[90px] leading-12 lg:leading-[103.5px]">
               Brooklyn Simmons
             </h1>
             <button className="mt-2.5 lg:mt-5 w-[194.42px] rounded-full text-white px-7.5 font-rubik font-medium text-base leading-15 tracking-[0.5px] bg-tomato flex items-center">
@@ -124,14 +124,14 @@ const Hero = () => {
             </button>
           </div>
           <div className="w-[326.25px] lg:pl-5.75 font-rubik text-base font-normal">
-            <h3 className="leading-7.5 text-chinese-black mt-7.5">About Me</h3>
+            <h3 className="leading-7.5 mt-7.5">About Me</h3>
             <p className="leading-7.5 mt-5 mb-10 text-5Dgray">
               A personal <span className="text-tomato">portfolio</span> is a
               collection of to your work, that is achievements, and a skills
               that <span className="text-tomato">web design</span> highlights in
               your
             </p>
-            <p className="leading-7.5 text-chinese-black">Find me on</p>
+            <p className="leading-7.5">Find me on</p>
             <div className="flex gap-1.5 mt-2.5">
               <ul className="flex gap-2">
                 <li className="menu-icons">
