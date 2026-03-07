@@ -12,6 +12,7 @@ import Hero from './Section/Hero'
 import ThemeProvider from './provider/ThemeProviver'
 import MySkill from './Section/MySkill'
 import Pricing from './Section/Pricing'
+import Testimonial from './Section/Testimonial'
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
     <Portfolio className="bg-light-gray"/>
     <MySkill/>
     <Pricing/>
+    <Testimonial/>
     </div>
     </ThemeProvider>
     
