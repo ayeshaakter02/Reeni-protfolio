@@ -1,4 +1,5 @@
 import React from "react";
+import latestUserImage from "../assets/images/latest-user-image.png";
 
 const LatestService = () => {
   return (
@@ -64,7 +65,7 @@ businesses to help theme their performance efficiency
 
           {/* Right Side Image */}
           <div className="mt-7.5 lg:mt-0">
-            <img src="/src/assets/images/latest-user-image.png" alt="" />
+          <img src={latestUserImage} alt="" />
           </div>
 
         </div>

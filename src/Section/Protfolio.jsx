@@ -1,5 +1,10 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import portfolio1 from "../assets/images/portfolio1.png";
+import portfolio2 from "../assets/images/portfolio1.png";
+import portfolio3 from "../assets/images/portfolio1.png";
+import portfolio4 from "../assets/images/portfolio1.png";
+
 
 const Portfolio = () => {
   return (
@@ -26,7 +31,7 @@ const Portfolio = () => {
           <div>
             <div className="Protfolio-img-card">
               <img
-                src="/src/assets/images/portfolio1.png"
+              src={portfolio1}
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -48,7 +53,7 @@ const Portfolio = () => {
           <div className="mt-7.5 xl:mt-25 xl:ml-1">
             <div className="Protfolio-img-card">
               <img
-                src="/src/assets/images/portfolio2.png"
+                src={portfolio2}
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -70,7 +75,7 @@ const Portfolio = () => {
           <div>
             <div className="Protfolio-img-card">
               <img
-                src="/src/assets/images/portfolio3.png"
+                src={portfolio3}
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />
@@ -92,7 +97,7 @@ const Portfolio = () => {
           <div className="xl:mt-25">
             <div className="Protfolio-img-card">
               <img
-                src="/src/assets/images/portfolio4.png"
+                src={portfolio4}
                 className="rounded-[20px] w-full xl:max-w-[568.5px]"
                 alt=""
               />

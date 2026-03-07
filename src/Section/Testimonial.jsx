@@ -1,5 +1,6 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { SiComma } from "react-icons/si";
+import testimonial from "../assets/images/testimonial-icon.png";
 
 const Testimonial = () => {
   return (
@@ -22,7 +23,7 @@ const Testimonial = () => {
         {/* Card 1 */}
         <div className="bg-light-gray rounded-3xl pt-9.5 pl-9.5 pb-[38.39px] relative border-b-4 border-red-500">
             <div className="flex">
-                <img src="/src/assets/images/testimonial-icon.png" alt="" />
+                <img src={testimonial} alt="" />
             </div>
           
 
@@ -45,7 +46,7 @@ const Testimonial = () => {
         <div className="bg-light-gray rounded-3xl p-8 relative border-b-4 border-red-500">
 
           <div className="flex">
-                <img src="/src/assets/images/testimonial-icon.png" alt="" />
+                <img src={testimonial} alt="" />
             </div>
 
           <p className="text-5Dgray leading-[30.6px] font-normal text-lg font-rubik mt-[42.39px] mb-[36.98px]">
