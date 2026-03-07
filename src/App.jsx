@@ -13,6 +13,7 @@ import ThemeProvider from './provider/ThemeProviver'
 import MySkill from './Section/MySkill'
 import Pricing from './Section/Pricing'
 import Testimonial from './Section/Testimonial'
+import Blog from './Section/Blog'
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
     <MySkill/>
     <Pricing/>
     <Testimonial/>
+    <Blog/>
     </div>
     </ThemeProvider>
     

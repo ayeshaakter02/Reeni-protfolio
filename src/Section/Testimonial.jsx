@@ -3,7 +3,7 @@ import { SiComma } from "react-icons/si";
 
 const Testimonial = () => {
   return (
-    <section className="container py-16 px-4">
+    <section className="container py-10 lg:py-30 px-3.75">
       
       {/* Heading */}
       <div className="text-center mb-12">
