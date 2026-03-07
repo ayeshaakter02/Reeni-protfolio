@@ -5,6 +5,7 @@ import { CgMenuRightAlt } from "react-icons/cg";
 import { FaMoon } from "react-icons/fa";
 import { IoSunny } from "react-icons/io5";
 import { useTheme } from '../provider/ThemeProviver';
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
     <nav className='container'>
         <div className='flex justify-between md:gap-3 lg:gap-28 xl:gap-[200.87px]
  items-center py-2.5 px-3.75'>
-            <img className='w-30' src="/src/assets/images/logo.png" alt="" />
+            <img className='w-30' src={logo} alt="" />
             <ul className='lg:w-[503.25px] hidden md:flex justify-between items-center'>
               <li className='menu-item'><a href="#">Home</a></li>
               <li className='menu-item'><a href="#">About</a></li>
