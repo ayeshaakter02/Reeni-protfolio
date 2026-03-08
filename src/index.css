@@ -14,6 +14,7 @@
 
 @theme {
   --color-bg: var(--bg);
+  --color-diff: var(--diff);
   --color-surface: var(--surface);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
@@ -27,6 +28,7 @@
 :root,
 [data-theme="light"] {
   --bg: #ffffff;
+  --diff: #F4F4F4;
   --surface: #f5f5f5;
   --primary: #111827;
   --secondary: #374151;
@@ -38,7 +40,8 @@
    DARK THEME
 ========================= */
 [data-theme="dark"] {
-  --bg: #1E1E1E;
+  --bg: #000000;
+  --diff: #141414;
   --surface: #1f2937;
   --primary: #f9fafb;
   --secondary: #9ca3af;
@@ -54,7 +57,7 @@
 
 @layer components {
   .menu-item {
-    @apply font-bold text-[15px] lg:text-base leading-7  px-2 lg:px-3 xl:px-4 md:py-3.5
+    @apply font-bold text-[15px] lg:text-base leading-7  px-2 lg:px-3 xl:px-4 md:py-3.5 hover:text-tomato
   }
   .menu-icons {
     @apply p-3.25 rounded-full bg-light-gray lg:text-sm leading-3.5 text-chinese-black font-normal cursor-pointer hover:bg-tomato hover:text-white
@@ -63,7 +66,7 @@
     @apply hidden xl:flex text-[150px] left-[9.9%] -mt-26 font-bold leading-[172.5px] absolute z-30 text-center [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1.25px] [-webkit-text-stroke-color:tomato]
   }
   .hero-heading2 {
-    @apply hidden xl:flex w-267.75 leading-[244.8px] text-5Dgray [-webkit-text-fill-color:white] [-webkit-text-stroke-width:1.25px] [-webkit-text-stroke-color:5Dgray] text-[212.9px] font-bold absolute left-[52.5%] top-[87.4%] z-10 -translate-x-1/2 -translate-y-1/2
+    @apply hidden xl:flex w-267.75 leading-[244.8px] text-5Dgray [-webkit-text-fill-color:transparent] [-webkit-text-stroke-width:1.25px] [-webkit-text-stroke-color:5Dgray] text-[212.9px] font-bold absolute left-[52.5%] top-[87.4%] z-10 -translate-x-1/2 -translate-y-1/2
   }
   .contact-icons {
     @apply w-[45px] h-[45px] rounded-[5px] p-[12.5px] border border-[#D9DDE0]

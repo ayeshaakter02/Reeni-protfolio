@@ -8,7 +8,7 @@ import portfolio4 from "../assets/images/portfolio1.png";
 
 const Portfolio = () => {
   return (
-    <section className="pt-25 pb-30">
+    <section className="pt-25 pb-30 bg-diff text-text">
       <div className="container px-3.75">
         {/* Section Title */}
         <div className="text-center">

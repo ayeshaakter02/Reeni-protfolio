@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
   return (
-    <div className=''>
+    <div className='bg-diff text-text'>
     <nav className='container'>
         <div className='flex justify-between md:gap-3 lg:gap-28 xl:gap-[200.87px]
  items-center py-2.5 px-3.75'>

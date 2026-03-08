@@ -23,7 +23,7 @@ export default function MySkill() {
   ];
 
   return (
-    <div className="">
+    <div className='bg-diff text-text'>
       <section className="container pt-10 lg:pt-30 pb-5 lg:pb-25 px-3.75">
 
       {/* heading */}

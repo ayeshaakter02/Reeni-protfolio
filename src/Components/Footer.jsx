@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-light-gray">
+    <div className="bg-diff text-text">
       <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
       <div className="flex justify-between">
 
@@ -75,19 +75,19 @@ const Footer = () => {
 
           {/* social icons */}
           <div className="flex gap-4 mt-7.5">
-            <div className="menu-icons bg-[#0A0A0A0F]">
+            <div className="menu-icons bg-[#0A0A0A0F] hover:bg-tomato">
               <FaInstagram />
             </div>
 
-            <div className="menu-icons bg-[#0A0A0A0F]">
+            <div className="menu-icons bg-[#0A0A0A0F] hover:bg-tomato">
               <FaLinkedinIn />
             </div>
 
-            <div className="menu-icons bg-[#0A0A0A0F]">
+            <div className="menu-icons bg-[#0A0A0A0F] hover:bg-tomato">
               <FaTwitter />
             </div>
 
-            <div className="menu-icons bg-[#0A0A0A0F]">
+            <div className="menu-icons bg-[#0A0A0A0F] hover:bg-tomato">
               <FaFacebookF />
             </div>
           </div>
