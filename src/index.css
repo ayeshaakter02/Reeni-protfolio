@@ -20,6 +20,7 @@
   --color-secondary: var(--secondary);
   --color-text: var(--text);
   --color-text-invert: var(--text-invert);
+  --color-textcard: var(--textcard)
 }
 
 /* =========================
@@ -34,6 +35,7 @@
   --secondary: #374151;
   --text: #141414;
   --text-invert: #ffffff;
+  --textcard: #5D6570
 }
 
 /* =========================
@@ -47,6 +49,7 @@
   --secondary: #9ca3af;
   --text: #ffffff;
   --text-invert: #000000;
+  --textcard: #9F9F9F;
 }
 
 @layer base {
@@ -111,10 +114,10 @@
   }
   /* latest */
   .latest-card-title {
-    @apply font-bold text-[24px] leading-7.5 text-chinese-black
+    @apply font-bold text-[24px] leading-7.5 text-text
   }
   .latest-card-para {
-    @apply text-5Dgray mt-1.75 sm:mt-5.5 font-normal font-rubik text-base leading-[26ox]
+    @apply text-textcard mt-1.75 sm:mt-5.5 font-normal font-rubik text-base leading-[26ox]
   }
   /* ExperienceSection */
   .ExperienceSection-exp {

@@ -3,7 +3,7 @@ import latestUserImage from "../assets/images/latest-user-image.png";
 
 const LatestService = () => {
   return (
-    <section className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-diff text-text">
+    <section className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-bg text-text">
       <div className="container mx-auto">
 
         {/* Heading */}
@@ -29,7 +29,7 @@ them improve their performance, efficiency, and organizational
           <div className="space-y-5 max-w-[622.5px]">
 
             {/* Card 1 */}
-            <div className="card-border py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
+            <div className="card-border bg-diff py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
               <h3 className="latest-card-title">
                 01. &nbsp; A Portfolio of Creativity
               </h3>
@@ -40,7 +40,7 @@ businesses to help theme their performance efficiency
             </div>
 
             {/* Card 2 */}
-            <div className="card-border py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
+            <div className="card-border bg-diff py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
               <h3 className="latest-card-title">
                 02. &nbsp; My Portfolio of Innovation
               </h3>
@@ -51,7 +51,7 @@ businesses to help theme their performance efficiency
             </div>
 
             {/* Card 3 */}
-            <div className="card-border py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
+            <div className="card-border bg-diff py-7.5 sm:py-9.5 px-3.75 sm:px-10.5">
               <h3 className="latest-card-title">
                 03. &nbsp; A Showcase of My Projects
               </h3>
