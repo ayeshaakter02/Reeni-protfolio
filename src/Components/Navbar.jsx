@@ -60,7 +60,7 @@ const Navbar = ({ open, setOpen }) => {
         </div>
                 {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md px-4 pb-4">
+        <div className="md:hidden bg-diff shadow-md px-4 pb-4">
           <ul className="flex flex-col gap-3">
             <li className='menu-item'><a href="#">Home</a></li>
             <li className='menu-item'><a href="#">About</a></li>
