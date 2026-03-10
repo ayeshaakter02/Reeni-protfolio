@@ -21,7 +21,7 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-7.5">
 
         {/* Card 1 */}
-        <div className="bg-light-gray rounded-3xl pt-9.5 pl-9.5 pb-[38.39px] relative border-b-4 border-red-500">
+        <div className="bg-diff rounded-3xl pt-9.5 pl-9.5 pb-[38.39px] relative border-b-4 border-red-500">
             <div className="flex">
                 <img src={testimonial} alt="" />
             </div>
@@ -43,7 +43,7 @@ const Testimonial = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-light-gray rounded-3xl p-8 relative border-b-4 border-red-500">
+        <div className="bg-diff rounded-3xl p-8 relative border-b-4 border-red-500">
 
           <div className="flex">
                 <img src={testimonial} alt="" />

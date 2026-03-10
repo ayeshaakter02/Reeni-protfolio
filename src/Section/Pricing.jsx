@@ -51,17 +51,17 @@ export default function Pricing() {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-3xl mt-[73px] pt-[37.72px] pl-[38px] pb-[37.28px] bg-[#e9e9e9] text-black  
+            className={`rounded-3xl mt-18.25 pt-[37.72px] pl-9.5 pb-[37.28px] text-black  
 hover:border-r-2 hover:border-b-2 hover:border-tomato hover:scale-110 hover:shadow-xl 
-transition-all duration-300`}
+transition-all duration-300 bg-diff`}
           >
 
             {/* title */}
-            <h3 className="text-lg font-bold leading-6.75 mb-0.5">{plan.name}</h3>
+            <h3 className="text-lg font-bold leading-6.75 mb-0.5 text-text">{plan.name}</h3>
 
             {/* price */}
-            <h2 className="text-5xl font-bold mb-0.5 leading-15">{plan.price}</h2>
-            <p className="text-lg font-bold leading-6.75">Per Month</p>
+            <h2 className="text-5xl font-bold mb-0.5 leading-15 text-text">{plan.price}</h2>
+            <p className="text-lg font-bold leading-6.75 text-text">Per Month</p>
 
             {/* features */}
             <ul className="space-y-3.75 mt-10.75">
@@ -81,7 +81,7 @@ transition-all duration-300`}
 
             {/* button */}
             <button
-              className="mt-10 flex cursor-pointer items-center gap-[0.1px] font-rubik font-medium text-sm leading-11.75 tracking-[0.5px] px-6 py-3 rounded-full border border-[#D9DDE0] hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300"
+              className="mt-10 flex cursor-pointer items-center gap-[0.1px] font-rubik font-medium text-sm leading-11.75 tracking-[0.5px] px-6 py-3 rounded-full border border-[#D9DDE0] hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 text-text2"
             >
               Get Started
               <FaArrowRight />

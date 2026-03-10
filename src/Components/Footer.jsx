@@ -1,8 +1,11 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
-import logo from "../assets/images/logo.png";
+import logoLight from "../assets/images/logo-light.png";
+import logoDark from "../assets/images/logo-dark.png";
+import { useTheme } from "../provider/ThemeProviver";
 
 const Footer = () => {
+  const { theme } = useTheme();
   return (
     <div className="bg-diff text-text">
       <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
@@ -10,7 +13,11 @@ const Footer = () => {
 
         {/* LEFT */}
         <div>
-          <img src={logo} alt="logo" className="mb-5.5 w-32" />
+          <img
+  src={theme === "dark" ? logoDark : logoLight}
+  alt="logo"
+  className="mb-5.5 w-32"
+/>
 
           <h2 className="text-[50px] font-bold leading-15 mb-10">
             Get Ready To <br /> <span className="font-light">Create Great</span>

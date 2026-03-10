@@ -12,7 +12,7 @@ const SkillBar = ({ name, percent }) => {
     <div className="mb-7.5 max-w-[622.5px]">
       <h4 className="leading-[17.5px] font-normal font-rubik tracking-[1px] text-sm mb-3.75">{name}</h4>
 
-      <div className="relative p-0.75 bg-light-gray h-3.25 rounded-[10px]">
+      <div className="relative p-0.75 bg-diff h-3.25 rounded-[10px]">
 
         {/* Red Progress */}
         <div

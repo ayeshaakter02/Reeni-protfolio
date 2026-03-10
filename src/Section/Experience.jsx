@@ -41,15 +41,15 @@ const Experience = () => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="card-border px-5 md:px-10 py-7 md:py-12 hover:shadow-lg transition"
+              className="card-border px-5 md:px-10 py-7 md:py-12 hover:shadow-lg transition bg-diff"
             >
-              <h3 className="text-chinese-black text-base font-normal leading-6.5 font-rubik">
+              <h3 className="text-text text-base font-normal leading-6.5 font-rubik">
                 {item.title}
               </h3>
 
-              <h4 className="font-bold text-lg leading-7 text-chinese-black mt-1.25">{item.year}</h4>
+              <h4 className="font-bold text-lg leading-7 text-text mt-1.25">{item.year}</h4>
 
-              <p className="text-5Dgray font-rubik font-normal text-base leading-7.5 mt-2 md:mt-4.5 mb-0.5">
+              <p className="text-textcard font-rubik font-normal text-base leading-7.5 mt-2 md:mt-4.5 mb-0.5">
                 {item.desc}
               </p>
             </div>
