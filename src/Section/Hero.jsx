@@ -34,7 +34,7 @@ const Hero = () => {
             <div
               className="max-w-100 bg-diff pl-7.5 pr-11.25"
             >
-              <div className="h-18 max-w-96.25 bg-bgnav items-center flex gap-46">
+              <div className="h-18 w-96.25 bg-bgnav items-center flex gap-46">
                 <img
   src={theme === "dark" ? logoDark : logoLight}
   alt="logo"
