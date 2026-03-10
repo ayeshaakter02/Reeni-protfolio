@@ -6,9 +6,9 @@ import portfolio3 from "/images/portfolio3.png";
 import portfolio4 from "/images/portfolio4.png";
 
 
-const Portfolio = () => {
+const Portfolio = ({ open, setOpen }) => {
   return (
-    <section className="pt-25 pb-30 bg-diff text-text">
+    <section  onClick={() => open && setOpen(false)} className="pt-25 pb-30 bg-diff text-text">
       <div className="container px-3.75">
         {/* Section Title */}
         <div className="text-center">

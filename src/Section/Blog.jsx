@@ -1,7 +1,7 @@
 import { FaUser } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 
-const Blog = () => {
+const Blog = ({ open, setOpen }) => {
   const blogs = [
     {
       img: "/images/blog1.png",
@@ -18,7 +18,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="container py-30 px-3.75">
+    <section  onClick={() => open && setOpen(false)} className="container py-30 px-3.75">
 
       {/* heading */}
       <div className="text-center">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Project from './Section/Project'
 import ProjectExperience from './Section/ProjectExperience'
@@ -18,11 +18,12 @@ import Footer from './Components/Footer'
 
 
 const App = () => {
+  const [open, setOpen] = useState(false);
   return (
     <ThemeProvider>
       <div className='bg-bg text-text'>
-    <Navbar/>
-    <Hero/>
+    <Navbar open={open} setOpen={setOpen}/>
+    <Hero open={open} setOpen={setOpen}/>
     <Project/>
     <ProjectExperience/>
     <LatestService/>
@@ -35,7 +36,7 @@ const App = () => {
     <Pricing/>
     <Testimonial/>
     <Blog/>
-    <Footer/>
+    <Footer open={open} setOpen={setOpen}/>
     </div>
     </ThemeProvider>
     

@@ -1,6 +1,6 @@
 import { FaCheck, FaArrowRight } from "react-icons/fa";
 
-export default function Pricing() {
+export default function Pricing({ open, setOpen }) {
   const plans = [
     {
       name: "Starter",
@@ -34,7 +34,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="container py-10 lg:py-30 px-2 lg:px-3.75">
+    <section  onClick={() => open && setOpen(false)} className="container py-10 lg:py-30 px-2 lg:px-3.75">
 
       {/* heading */}
       <p className="common-title">

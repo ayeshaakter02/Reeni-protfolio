@@ -1,6 +1,6 @@
 import { FaUniversity, FaCalendarAlt, FaPenNib } from "react-icons/fa";
 
-export default function MySkill() {
+export default function MySkill({ open, setOpen }) {
   const skills = [
     {
       icon: <FaUniversity size={28} />,
@@ -23,7 +23,7 @@ export default function MySkill() {
   ];
 
   return (
-    <div className='bg-diff text-text'>
+    <div  onClick={() => open && setOpen(false)} className='bg-diff text-text'>
       <section className="container pt-10 lg:pt-30 pb-5 lg:pb-25 px-3.75">
 
       {/* heading */}

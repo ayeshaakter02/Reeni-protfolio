@@ -23,9 +23,9 @@ const data = [
   },
 ];
 
-const Experience = () => {
+const Experience = ({ open, setOpen }) => {
   return (
-    <section className="pt-22.5 pb-18.75">
+    <section  onClick={() => open && setOpen(false)} className="pt-22.5 pb-18.75">
       <div className="container mx-auto px-3.75">
         <div className="flex gap-[19.68px] mt-0.5 sm:mt-1">
             <h3 className="font-bold text-[32px] md:leading-10.5">Education</h3>

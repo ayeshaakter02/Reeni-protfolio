@@ -2,9 +2,9 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { SiComma } from "react-icons/si";
 import testimonial from "/images/testimonial-icon.png";
 
-const Testimonial = () => {
+const Testimonial = ({ open, setOpen }) => {
   return (
-    <section className="container px-3.75">
+    <section  onClick={() => open && setOpen(false)} className="container px-3.75">
       
       {/* Heading */}
       <div className="text-center mb-12">

@@ -4,10 +4,10 @@ import logoLight from "/images/logo-light.png";
 import logoDark from "/images/logo-dark.png";
 import { useTheme } from "../provider/ThemeProviver";
 
-const Footer = () => {
+const Footer = ({ open, setOpen }) => {
   const { theme } = useTheme();
   return (
-    <div className="bg-diff text-text">
+    <div  onClick={() => open && setOpen(false)} className="bg-diff text-text">
       <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
       <div className="lg:flex justify-between">
 

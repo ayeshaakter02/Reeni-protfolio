@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ProjectExperience = () => {
+const ProjectExperience = ({ open, setOpen }) => {
   return (
-        <div>
+        <div  onClick={() => open && setOpen(false)}>
         <div className="container px-3.75 mt-7.5">
             <div className="lg:flex lg:gap-7.5 justify-center place-items-center">
                 <div className='max-w-[622.5px] pt-7.5 lg:pt-9 px-5 lg:px-13 bg-diff rounded-[20px]'>

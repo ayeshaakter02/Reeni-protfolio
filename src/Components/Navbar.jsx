@@ -8,7 +8,7 @@ import { useTheme } from '../provider/ThemeProviver';
 import logoLight from "/images/logo-light.png";
 import logoDark from "/images/logo-dark.png";
 
-const Navbar = () => {
+const Navbar = ({ open, setOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
    const { theme, handleTheme } = useTheme();
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='bg-diff text-text'>
+    <div  onClick={() => open && setOpen(false)} className='bg-diff text-text'>
     <nav className='container'>
         <div className='flex justify-between md:gap-3 lg:gap-28 xl:gap-[200.87px]
  items-center py-2.5 px-3.75'>

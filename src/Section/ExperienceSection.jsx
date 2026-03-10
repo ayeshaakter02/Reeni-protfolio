@@ -2,9 +2,9 @@ import React from "react";
 import experience from "/images/experience.png";
 
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ open, setOpen }) => {
   return (
-    <section>
+    <section  onClick={() => open && setOpen(false)}>
       <div className="container mx-auto px-7.5 lg:px-3.75">
 
         <div className="lg:flex gap-10 xl:gap-28">

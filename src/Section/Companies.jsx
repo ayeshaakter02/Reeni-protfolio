@@ -11,9 +11,9 @@ const companies = [
   { name: "Asana", logo: "/images/asana.png" },
 ];
 
-const Companies = () => {
+const Companies = ({ open, setOpen }) => {
   return (
-    <section className="container px-3.75 my-30">
+    <section  onClick={() => open && setOpen(false)} className="container px-3.75 my-30">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[155px_162px] auto-rows-[93.98px]">
 
         {companies.map((company, index) => (

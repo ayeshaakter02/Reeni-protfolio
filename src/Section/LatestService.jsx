@@ -1,9 +1,9 @@
 import React from "react";
 import latestUserImage from "/images/latest-user-image.png";
 
-const LatestService = () => {
+const LatestService = ({ open, setOpen }) => {
   return (
-    <section className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-bg text-text">
+    <section  onClick={() => open && setOpen(false)} className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-bg text-text">
       <div className="container mx-auto">
 
         {/* Heading */}
