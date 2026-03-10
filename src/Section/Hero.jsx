@@ -32,9 +32,9 @@ const Hero = () => {
       ${open ? "right-2" : "-right-100"}`}
           >
             <div
-              className="w-100 bg-diff pl-7.5 pr-11.25"
+              className="max-w-100 bg-diff pl-7.5 pr-11.25"
             >
-              <div className="h-18 w-96.25 bg-bgnav items-center flex gap-46">
+              <div className="h-18 max-w-96.25 bg-bgnav items-center flex gap-46">
                 <img
   src={theme === "dark" ? logoDark : logoLight}
   alt="logo"
@@ -119,7 +119,7 @@ const Hero = () => {
           <h2 className="hero-heading2">WEB DESIGN</h2>
         </div>
         <div className="sm:flex justify-between place-items-center xl:gap-[558.75px] mt-5 xl:mt-48 mx-20 lg:mx-0">
-          <div className="w-101.25">
+          <div className="max-w-101.25">
             <h2 className="font-bold text-xl lg:text-[28px] leading-9.5 uppercase mt-7.5 md:mt-0">
               Hello i’m
             </h2>

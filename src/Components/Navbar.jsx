@@ -42,7 +42,7 @@ const Navbar = () => {
               <li className='menu-icons'><FaTwitter /></li>
               <li className='menu-icons'><FaFacebookF /></li>
             </ul>
-                        <div className='ml-45 md:ml-0'>
+                        <div className='ml-30 md:ml-0'>
               <button
       onClick={toggleTheme}
       className="menu-icons cursor-pointer bg-primary text-text-invert"
@@ -95,9 +95,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
-
-
-// lg:gap-30 xl:gap-[200.87px]

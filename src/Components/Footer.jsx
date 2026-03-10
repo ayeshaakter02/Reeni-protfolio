@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="bg-diff text-text">
       <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
-      <div className="flex justify-between">
+      <div className="lg:flex justify-between">
 
         {/* LEFT */}
         <div>
