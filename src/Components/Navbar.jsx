@@ -5,8 +5,8 @@ import { CgMenuRightAlt } from "react-icons/cg";
 import { FaMoon } from "react-icons/fa";
 import { IoSunny } from "react-icons/io5";
 import { useTheme } from '../provider/ThemeProviver';
-import logoLight from "../assets/images/logo-light.png";
-import logoDark from "../assets/images/logo-dark.png";
+import logoLight from "/images/logo-light.png";
+import logoDark from "/images/logo-dark.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

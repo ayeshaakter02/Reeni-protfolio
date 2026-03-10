@@ -1,7 +1,7 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
-import logoLight from "../assets/images/logo-light.png";
-import logoDark from "../assets/images/logo-dark.png";
+import logoLight from "/images/logo-light.png";
+import logoDark from "/images/logo-dark.png";
 import { useTheme } from "../provider/ThemeProviver";
 
 const Footer = () => {

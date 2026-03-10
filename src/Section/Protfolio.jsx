@@ -1,9 +1,9 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import portfolio1 from "../assets/images/portfolio1.png";
-import portfolio2 from "../assets/images/portfolio1.png";
-import portfolio3 from "../assets/images/portfolio1.png";
-import portfolio4 from "../assets/images/portfolio1.png";
+import portfolio1 from "/images/portfolio1.png";
+import portfolio2 from "/images/portfolio2.png";
+import portfolio3 from "/images/portfolio3.png";
+import portfolio4 from "/images/portfolio4.png";
 
 
 const Portfolio = () => {

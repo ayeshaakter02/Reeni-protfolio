@@ -11,11 +11,11 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { useState } from "react";
-import logoLight from "../assets/images/logo-light.png";
-import logoDark from "../assets/images/logo-dark.png";
-import link from "../assets/images/link.png";
-import svg from "../assets/images/svg.png";
-import hero from "../assets/images/hero.png";
+import logoLight from "/images/logo-light.png";
+import logoDark from "/images/logo-dark.png";
+import link from "/images/link.png";
+import svg from "/images/svg.png";
+import hero from "/images/hero.png";
 import { useTheme } from "../provider/ThemeProviver";
 
 const Hero = () => {
@@ -71,10 +71,10 @@ const Hero = () => {
                 <p className="font-medium text-base leading-7 text-chinese-black tracking-[0.5px] mt-5.5">find with me</p>
                           <div className='justify-between pt-3.75 pb-7.5'>
                               <ul className='flex gap-2'>
-                              <li className='menu-icons bg-[#EDEDED]'><FaInstagram /></li>
-                              <li className='menu-icons bg-[#EDEDED]'><FaLinkedinIn /></li>
-                              <li className='menu-icons bg-[#EDEDED]'><FaTwitter /></li>
-                              <li className='menu-icons bg-[#EDEDED]'><FaFacebookF /></li>
+                              <li className='menu-icons bg-[#EDEDED] hover:text-chinese-black'><FaInstagram /></li>
+                              <li className='menu-icons bg-[#EDEDED] hover:text-chinese-black'><FaLinkedinIn /></li>
+                              <li className='menu-icons bg-[#EDEDED] hover:text-chinese-black'><FaTwitter /></li>
+                              <li className='menu-icons bg-[#EDEDED] hover:text-chinese-black'><FaFacebookF /></li>
                             </ul>
                           </div>
               </div>

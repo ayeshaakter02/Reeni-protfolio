@@ -1,8 +1,8 @@
 import React from 'react'
-import webDesign from "../assets/images/web-design.png";
-import UiUxDesign from "../assets/images/ui-ux-design.png";
-import researchDesign from "../assets/images/research-design.png";
-import marketingDesign from "../assets/images/marketing-design.png";
+import webDesign from "/images/web-design.png";
+import UiUxDesign from "/images/ui-ux-design.png";
+import researchDesign from "/images/research-design.png";
+import marketingDesign from "/images/marketing-design.png";
 
 
 const project = () => {

@@ -1,23 +1,14 @@
 import React from "react";
 
-import Linear from "../assets/images/linear.png";
-import Framer from "../assets/images/framer.png";
-import Notion from "../assets/images/notion.png";
-import Slack from "../assets/images/slack.png";
-import Medium from "../assets/images/medium.png";
-import Upwork from "../assets/images/upwork.png";
-import Amazon from "../assets/images/amazon.png";
-import Asana from "../assets/images/asana.png";
-
 const companies = [
-  { name: "Linear", logo: "../assets/images/linear.png" },
-  { name: "Framer", logo: "../assets/images/framer.png" },
-  { name: "Notion", logo: "../assets/images/notion.png" },
-  { name: "Slack", logo: "../assets/images/slack.png" },
-  { name: "Medium", logo: "../assets/images/medium.png" },
-  { name: "Upwork", logo: "../assets/images/upwork.png" },
-  { name: "Amazon", logo: "../assets/images/amazon.png" },
-  { name: "Asana", logo: {Asana} },
+  { name: "Linear", logo: "/images/linear.png" },
+  { name: "Framer", logo: "/images/framer.png" },
+  { name: "Notion", logo: "/images/notion.png" },
+  { name: "Slack", logo: "/images/slack.png" },
+  { name: "Medium", logo: "/images/medium.png" },
+  { name: "Upwork", logo: "/images/upwork.png" },
+  { name: "Amazon", logo: "/images/amazon.png" },
+  { name: "Asana", logo: "/images/asana.png" },
 ];
 
 const Companies = () => {

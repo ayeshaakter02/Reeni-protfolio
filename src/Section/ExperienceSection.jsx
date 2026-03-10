@@ -1,5 +1,5 @@
 import React from "react";
-import experience from "../assets/images/experience.png";
+import experience from "/images/experience.png";
 
 
 const ExperienceSection = () => {

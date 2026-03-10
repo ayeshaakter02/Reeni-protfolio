@@ -1,6 +1,6 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { SiComma } from "react-icons/si";
-import testimonial from "../assets/images/testimonial-icon.png";
+import testimonial from "/images/testimonial-icon.png";
 
 const Testimonial = () => {
   return (

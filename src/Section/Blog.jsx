@@ -1,21 +1,18 @@
 import { FaUser } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
-import blog1 from "../assets/images/blog1.png";
-import blog2 from "../assets/images/blog2.png";
-import blog3 from "../assets/images/blog3.png";
 
 const Blog = () => {
   const blogs = [
     {
-      img: "/src/assets/images/blog1.png",
+      img: "/images/blog1.png",
       title: "Let's bring your ideas to life! Contact me, and let's",
     },
     {
-      img: "/src/assets/images/blog2.png",
+      img: "/images/blog2.png",
       title: "Inspiring the World, One Project at a Time for the man",
     },
     {
-      img: "/src/assets/images/blog3.png",
+      img: "/images/blog3.png",
       title: "Each one showcases my approach and dedication man",
     },
   ];

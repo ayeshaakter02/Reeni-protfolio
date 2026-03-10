@@ -1,5 +1,5 @@
 import React from "react";
-import latestUserImage from "../assets/images/latest-user-image.png";
+import latestUserImage from "/images/latest-user-image.png";
 
 const LatestService = () => {
   return (
