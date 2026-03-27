@@ -16,6 +16,7 @@ import Testimonial from './Section/Testimonial'
 import Blog from './Section/Blog'
 import Footer from './Components/Footer'
 import Animation from './Section/CursorBorderCard'
+import Sidebar from './Components/Sidebar'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <ThemeProvider>
       <div className='bg-bg text-text'>
+        <Sidebar open={open} setOpen={setOpen} />
     <Navbar open={open} setOpen={setOpen}/>
     <Hero open={open} setOpen={setOpen}/>
     <Project open={open} setOpen={setOpen}/>

@@ -13,7 +13,10 @@ const companies = [
 
 const Companies = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)} className="container px-3.75 my-30">
+    <section  className={`transition-all duration-300 container px-3.75 my-30 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[155px_162px] auto-rows-[93.98px]">
 
         {companies.map((company, index) => (

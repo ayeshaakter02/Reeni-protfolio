@@ -8,7 +8,10 @@ import portfolio4 from "/images/portfolio4.png";
 
 const Portfolio = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)} className="pt-25 pb-30 bg-diff text-text">
+    <section  className={`transition-all duration-300 pt-25 pb-30 bg-diff text-text ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="container px-3.75">
         {/* Section Title */}
         <div className="text-center">

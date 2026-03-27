@@ -4,7 +4,10 @@ import testimonial from "/images/testimonial-icon.png";
 
 const Testimonial = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)} className="container px-3.75">
+    <section  className={`transition-all duration-300 container px-3.75 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       
       {/* Heading */}
       <div className="text-center mb-12">

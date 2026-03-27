@@ -4,7 +4,10 @@ import experience from "/images/experience.png";
 
 const ExperienceSection = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)}>
+    <section className={`transition-all duration-300 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="container mx-auto px-7.5 lg:px-3.75">
 
         <div className="lg:flex gap-10 xl:gap-28">

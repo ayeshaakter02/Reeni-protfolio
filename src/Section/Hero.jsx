@@ -5,26 +5,17 @@ import {
   FaTwitter,
   FaFacebookF,
 } from "react-icons/fa";
-import { FaFacebookMessenger } from "react-icons/fa6";
-import { RxCross1 } from "react-icons/rx";
-import { IoCall } from "react-icons/io5";
-import { IoMdMail } from "react-icons/io";
-import { FaLocationCrosshairs } from "react-icons/fa6";
-import { useState } from "react";
-import logoLight from "/images/logo-light.png";
-import logoDark from "/images/logo-dark.png";
-import link from "/images/link.png";
-import svg from "/images/svg.png";
 import hero from "/images/hero.png";
-import { useTheme } from "../provider/ThemeProviver";
-import Sidebar from "../Components/Sidebar";
 
 const Hero = ({ open, setOpen }) => {
   return (
     <div>
       <div className="container lg:pt-[10.55px] px-3.75 relative">
-        <Sidebar open={open} setOpen={setOpen} />
-        {/* banner start */}
+        <div className={`transition-all duration-300 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
+          {/* banner start */}
         <div  onClick={() => open && setOpen(false)}>
             <div className="xl:absolute left-[13.5%] -top-2">
           <div className="w-full xl:w-239 mx-auto flex justify-center relative z-20 bg-cover">
@@ -81,6 +72,8 @@ const Hero = ({ open, setOpen }) => {
         </div>
         </div>
         {/* banner end  */}
+        </div>
+        
       </div>
     </div>
   );

@@ -35,7 +35,10 @@ const SkillBar = ({ name, percent }) => {
 
 const Skills = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)}>
+    <section  className={`transition-all duration-300 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="container mx-auto px-3.75">
 
         <div className="grid lg:grid-cols-2 gap-7.5 justify-center">

@@ -7,7 +7,10 @@ import marketingDesign from "/images/marketing-design.png";
 
 const project = ({ open, setOpen }) => {
   return (
-    <div  onClick={() => open && setOpen(false)}>
+    <div  className={`transition-all duration-300 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="container px-3.75 py-7.5 xl:mt-121.75 lg:pb-22.5">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:flex justify-center place-items-center gap-2.5  lg:gap-7.5 xl:pt-7.5">
           <div className='project-card'>

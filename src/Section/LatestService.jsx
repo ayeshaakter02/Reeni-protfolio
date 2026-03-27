@@ -3,7 +3,10 @@ import latestUserImage from "/images/latest-user-image.png";
 
 const LatestService = ({ open, setOpen }) => {
   return (
-    <section  onClick={() => open && setOpen(false)} className="mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-bg text-text">
+    <section  className={`transition-all duration-300 mt-15 lg:mt-[120.47px] mb-[60.3px] lg:mb-[120.5px] px-3.75 xl:px-0 bg-bg text-text ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <div className="container mx-auto">
 
         {/* Heading */}

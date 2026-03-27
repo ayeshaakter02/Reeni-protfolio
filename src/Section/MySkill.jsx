@@ -23,7 +23,10 @@ export default function MySkill({ open, setOpen }) {
   ];
 
   return (
-    <div  onClick={() => open && setOpen(false)} className='bg-diff text-text'>
+    <div  className={`transition-all duration-300 bg-diff text-text ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <section className="container pt-10 lg:pt-30 pb-5 lg:pb-25 px-3.75">
 
       {/* heading */}

@@ -1,5 +1,4 @@
-import { FaUser } from "react-icons/fa";
-import { FaCalendarAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Blog = ({ open, setOpen }) => {
   const blogs = [
@@ -18,15 +17,22 @@ const Blog = ({ open, setOpen }) => {
   ];
 
   return (
-    <section  onClick={() => open && setOpen(false)} className="container py-30 px-3.75">
-
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}  
+      whileInView={{ opacity: 50, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className={`transition-all duration-400 container py-30 px-3.75 ${
+        open ? "opacity-25" : "opacity-100"
+      }`}
+      onClick={() => open && setOpen(false)}
+    >
+      
       {/* heading */}
       <div className="text-center">
-        <p className="common-title">
-          Blog and News
-        </p>
+        <p className="common-title">Blog and News</p>
 
-        <h2 className="common-heading  mb-15">
+        <h2 className="common-heading mb-15">
           Elevating Personal Branding the <br />
           through Powerful Portfolios
         </h2>
@@ -36,11 +42,14 @@ const Blog = ({ open, setOpen }) => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {blogs.map((blog, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 50, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
             className="border border-light-gray rounded-3xl overflow-hidden group hover:border-white transition"
           >
-
             {/* image */}
             <div className="relative">
               <img
@@ -48,7 +57,6 @@ const Blog = ({ open, setOpen }) => {
                 alt="blog"
                 className="w-full h-64 rounded-2xl object-cover"
               />
-
             </div>
 
             {/* content */}
@@ -57,16 +65,15 @@ const Blog = ({ open, setOpen }) => {
                 {blog.title}
               </h3>
 
-              <button className="cursor-pointer text-5Dgray font-rubik text-[13px] font-normal leading-6.75 mt-4 flex items-center gap-2 transition">
+              <button className="cursor-pointer text-5Dgray font-rubik text-[13px] mt-4 flex items-center gap-2">
                 READ MORE →
               </button>
             </div>
-
-          </div>
+          </motion.div>
         ))}
 
       </div>
-    </section>
+    </motion.div>
   );
 };
 

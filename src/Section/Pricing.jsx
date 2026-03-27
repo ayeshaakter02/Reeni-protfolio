@@ -34,7 +34,10 @@ export default function Pricing({ open, setOpen }) {
   ];
 
   return (
-    <section  onClick={() => open && setOpen(false)} className="container py-10 lg:py-30 px-2 lg:px-3.75">
+    <section className={`transition-all duration-300 container py-10 lg:py-30 px-2 lg:px-3.75 ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
 
       {/* heading */}
       <p className="common-title">

@@ -7,7 +7,10 @@ import { useTheme } from "../provider/ThemeProviver";
 const Footer = ({ open, setOpen }) => {
   const { theme } = useTheme();
   return (
-    <div  onClick={() => open && setOpen(false)} className="bg-diff text-text">
+    <div className={`transition-all duration-300 bg-diff text-text ${
+          open ? "opacity-25" : "opacity-100"
+        }`}
+        onClick={() => open && setOpen(false)}>
       <footer className="container pt-20 xl:pt-30 pb-30 px-3.75">
       <div className="lg:flex justify-between">
 
