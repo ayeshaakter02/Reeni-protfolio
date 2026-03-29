@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -24,11 +25,28 @@ const data = [
 ];
 
 const Experience = ({ open, setOpen }) => {
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 70 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
   return (
-    <section  className={`transition-all duration-300 pt-22.5 pb-18.75 ${
+    <motion.section  className={`transition-all duration-300 pt-22.5 pb-18.75 ${
           open ? "opacity-25" : "opacity-100"
         }`}
-        onClick={() => open && setOpen(false)}>
+        onClick={() => open && setOpen(false)} 
+        initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}>
       <div className="container mx-auto px-3.75">
         <div className="flex gap-[19.68px] mt-0.5 sm:mt-1">
             <h3 className="font-bold text-[32px] md:leading-10.5">Education</h3>
@@ -42,7 +60,8 @@ const Experience = ({ open, setOpen }) => {
         <div className="grid md:grid-cols-2 gap-7.5 mt-7.5">
 
           {data.map((item, index) => (
-            <div
+            <motion.div 
+            variants={cardVariants}
               key={index}
               className="card-border px-5 md:px-10 py-7 md:py-12 hover:shadow-lg transition bg-diff"
             >
@@ -55,13 +74,13 @@ const Experience = ({ open, setOpen }) => {
               <p className="text-textcard font-rubik font-normal text-base leading-7.5 mt-2 md:mt-4.5 mb-0.5">
                 {item.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
 
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

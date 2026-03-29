@@ -8,7 +8,7 @@ const ProjectExperience = ({ open, setOpen }) => {
         onClick={() => open && setOpen(false)}>
         <div className="container px-3.75 mt-7.5">
             <div className="lg:flex lg:gap-7.5 justify-center place-items-center">
-                <div className='max-w-[622.5px] pt-7.5 lg:pt-9 px-5 lg:px-13 bg-diff rounded-[20px]'>
+                <div className='max-w-[622.5px] pt-7.5 lg:pt-9 px-5 lg:px-13 gradient-bg rounded-[20px]'>
                     <div className="sm:flex max-h-51 gap-10 lg:gap-[65.61px] items-center">
                         <div class="max-w-[185.78px] text-tomato text-[111.26px] md:text-[130px] xl:text-[160px] font-bold flex sm:justify-center sm:items-center font-inter">
                             25

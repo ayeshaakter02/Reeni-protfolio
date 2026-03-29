@@ -31,7 +31,7 @@ const Navbar = ({ open, setOpen }) => {
     >
       <nav className="container">
         <div
-          className="flex justify-between md:gap-3 lg:gap-28 xl:gap-[200.87px]
+          className="flex justify-between md:gap-3 xl:gap-[200.87px]
  items-center py-2.5 px-3.75"
         >
           <img
@@ -80,7 +80,7 @@ const Navbar = ({ open, setOpen }) => {
                 <FaFacebookF />
               </li>
             </ul>
-            <div className="ml-40 sm:ml-80 md:ml-105 lg:ml-0">
+            <div className="lg:flex hidden ml-40 sm:ml-80 md:ml-105 lg:ml-0">
               <button
                 onClick={toggleTheme}
                 className="menu-icons cursor-pointer bg-primary text-text-invert"
@@ -89,12 +89,21 @@ const Navbar = ({ open, setOpen }) => {
               </button>
             </div>
           </div>
-          <button
+          <div className="flex lg:hidden gap-2">
+              <button
+                onClick={toggleTheme}
+                className="menu-icons cursor-pointer bg-primary text-text-invert"
+              >
+                {theme === "dark" ? <IoSunny /> : <FaMoon />}
+              </button>
+              <button
             className="menu-icons cursor-pointer flex lg:hidden bg-tomato text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             <CgMenuRightAlt />
           </button>
+            </div>
+          
         </div>
         {/* Mobile Menu */}
         {/* Mobile Menu */}

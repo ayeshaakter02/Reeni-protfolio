@@ -5,13 +5,19 @@ import {
   FaTwitter,
   FaFacebookF,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import hero from "/images/hero.png";
 
 const Hero = ({ open, setOpen }) => {
   return (
     <div>
       <div className="container lg:pt-[10.55px] px-3.75 relative">
-        <div className={`transition-all duration-300 ${
+        <motion.div 
+         initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className={`transition-all duration-300 ${
           open ? "opacity-25" : "opacity-100"
         }`}
         onClick={() => open && setOpen(false)}>
@@ -19,7 +25,10 @@ const Hero = ({ open, setOpen }) => {
         <div  onClick={() => open && setOpen(false)}>
             <div className="xl:absolute left-[13.5%] -top-2">
           <div className="w-full xl:w-239 mx-auto flex justify-center relative z-20 bg-cover">
-            <img
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7 }}
               className="lg:w-[637.5px] lg:h-[805.9px] shadow-x-2xl"
               src={hero}
               alt=""
@@ -29,7 +38,11 @@ const Hero = ({ open, setOpen }) => {
           <h2 className="hero-heading2">WEB DESIGN</h2>
         </div>
         <div className="sm:flex justify-between place-items-center xl:gap-[558.75px] mt-5 xl:mt-48 mx-20 lg:mx-0">
-          <div className="max-w-101.25">
+          <motion.div 
+          initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="max-w-101.25">
             <h2 className="font-bold text-xl lg:text-[28px] leading-9.5 uppercase mt-7.5 md:mt-0">
               Hello i’m
             </h2>
@@ -42,8 +55,11 @@ const Hero = ({ open, setOpen }) => {
                 <IoArrowForwardOutline />
               </span>
             </button>
-          </div>
-          <div className="w-[326.25px] lg:pl-5.75 font-rubik text-base font-normal">
+          </motion.div>
+          <motion.div initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="w-[326.25px] lg:pl-5.75 font-rubik text-base font-normal">
             <h3 className="leading-7.5 mt-7.5">About Me</h3>
             <p className="leading-7.5 mt-5 mb-10 text-5Dgray">
               A personal <span className="text-tomato">portfolio</span> is a
@@ -68,11 +84,11 @@ const Hero = ({ open, setOpen }) => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
         </div>
         {/* banner end  */}
-        </div>
+        </motion.div>
         
       </div>
     </div>
