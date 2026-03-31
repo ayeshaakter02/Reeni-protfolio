@@ -1,31 +1,61 @@
 import React from "react";
 import experience from "/images/experience.png";
-
+import { motion } from "framer-motion";
 
 const ExperienceSection = ({ open, setOpen }) => {
+  // stagger container
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  // items animation
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
-    <section className={`transition-all duration-300 ${
+    <motion.section className={`transition-all duration-300 ${
           open ? "opacity-25" : "opacity-100"
         }`}
-        onClick={() => open && setOpen(false)}>
+        onClick={() => open && setOpen(false)} 
+        initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}>
       <div className="container mx-auto px-7.5 lg:px-3.75">
 
         <div className="lg:flex gap-10 xl:gap-28">
 
           {/* Left Image */}
-          <div className="w-full flex justify-center">
+          <motion.div className="w-full flex justify-center" 
+          initial={{ opacity: 0, scale: 0.8, x: -50 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}>
             <img
               src={experience}
               alt="experience"
               className="rounded-[20px] lg:max-w-[622.5px] object-cover"
             />
-          </div>
+          </motion.div>
 
           {/* Right Content */}
-          <div className="mt-7.5 lg:mt-0 xl:pr-34.5">
+          <motion.div className="mt-7.5 lg:mt-0 xl:pr-34.5" 
+          variants={containerVariants}>
 
             {/* Title */}
-            <div className="flex items-center gap-4 mb-8 sm:mb-4 xl:mb-8">
+            <motion.div className="flex items-center gap-4 mb-8 sm:mb-4 xl:mb-8" 
+            variants={itemVariants}
+            >
               <h2 className="text-[32px] leading-10.5 font-bold">
                 Experiences
               </h2>
@@ -35,10 +65,10 @@ const ExperienceSection = ({ open, setOpen }) => {
                 <span className="w-17.25 h-0.5 bg-5Dgray"></span>
                 <span className="w-1.5 h-1.5 bg-5Dgray rounded-full"></span>
             </div>
-            </div>
+            </motion.div>
 
             {/* Experience Item */}
-            <div className="mb-7.5 xl:mb-12.5">
+            <motion.div className="mb-7.5 xl:mb-12.5" variants={itemVariants}>
               <p className="ExperienceSection-exp">
                 experience
               </p>
@@ -55,10 +85,10 @@ const ExperienceSection = ({ open, setOpen }) => {
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum desi dolore eu fugiat nulla pariatu Duis aute irure
               </p>
-            </div>
+            </motion.div>
 
             {/* Experience Item */}
-            <div>
+            <motion.div variants={itemVariants}>
               <p className="ExperienceSection-exp">
                 experience
               </p>
@@ -75,14 +105,14 @@ cillum desi dolore eu fugiat nulla pariatu Duis aute irure
                 Interested in working together? Let’s bring your ideas to
 life! Contact me, and let’s start building something.
               </p>
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

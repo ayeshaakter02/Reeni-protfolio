@@ -1,6 +1,10 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { FaCheck, FaArrowRight } from "react-icons/fa";
 
 export default function Pricing({ open, setOpen }) {
+
   const plans = [
     {
       name: "Starter",
@@ -33,67 +37,101 @@ export default function Pricing({ open, setOpen }) {
     },
   ];
 
+  // container stagger
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  // each card animation
+  const cardVariants = {
+    hidden: { opacity: 0, y: 60, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
-    <section className={`transition-all duration-300 container py-10 lg:py-30 px-2 lg:px-3.75 ${
-          open ? "opacity-25" : "opacity-100"
-        }`}
-        onClick={() => open && setOpen(false)}>
+    <motion.section
+      className={`transition-all duration-300 container py-10 lg:py-30 px-2 lg:px-3.75 ${
+        open ? "opacity-25" : "opacity-100"
+      }`}
+      onClick={() => open && setOpen(false)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
 
       {/* heading */}
-      <p className="common-title">
-        MY PRICE PLAN
-      </p>
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <p className="common-title">MY PRICE PLAN</p>
 
-      <h2 className="common-heading  mb-15">
-        Enhancing Collaboration between Remote
-      </h2>
+        <h2 className="common-heading mb-15">
+          Enhancing Collaboration between Remote
+        </h2>
+      </motion.div>
 
       {/* cards */}
-      <div className="grid lg:grid-cols-3 gap-10">
-
+      <motion.div
+        className="grid lg:grid-cols-3 gap-10"
+        variants={containerVariants}
+      >
         {plans.map((plan, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`rounded-3xl mt-18.25 pt-[37.72px] pl-9.5 pb-[37.28px] text-black  
-hover:border-r-2 hover:border-b-2 hover:border-tomato hover:scale-110 hover:shadow-xl 
-transition-all duration-300 bg-diff`}
+            variants={cardVariants}
+            className={`rounded-3xl lg:mt-18.25 pt-[37.72px] pl-9.5 pb-[37.28px] text-black  
+              hover:border-r-2 hover:border-b-2 hover:border-tomato lg:hover:scale-110 hover:shadow-xl 
+              transition-all duration-300 bg-diff`}
           >
 
             {/* title */}
-            <h3 className="text-lg font-bold leading-6.75 mb-0.5 text-text">{plan.name}</h3>
+            <h3 className="text-lg font-bold leading-6.75 mb-0.5 text-text">
+              {plan.name}
+            </h3>
 
             {/* price */}
-            <h2 className="text-5xl font-bold mb-0.5 leading-15 text-text">{plan.price}</h2>
+            <h2 className="text-5xl font-bold mb-0.5 leading-15 text-text">
+              {plan.price}
+            </h2>
             <p className="text-lg font-bold leading-6.75 text-text">Per Month</p>
 
             {/* features */}
             <ul className="space-y-3.75 mt-10.75">
-
               {plan.features.map((item, i) => (
-                <li key={i} className="flex items-center gap-2.5 text-5Dgray font-rubik text-base font-normal leading-6">
-
+                <li
+                  key={i}
+                  className="flex items-center gap-2.5 text-5Dgray font-rubik text-base font-normal leading-6"
+                >
                   <span className="bg-red-500 text-white rounded-full p-1">
                     <FaCheck size={10} />
                   </span>
-
                   {item}
-
                 </li>
               ))}
             </ul>
 
             {/* button */}
-            <button
-              className="mt-10 flex cursor-pointer items-center gap-[0.1px] font-rubik font-medium text-sm leading-11.75 tracking-[0.5px] px-6 py-3 rounded-full border border-[#D9DDE0] hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 text-text2"
-            >
+            <button className="mt-10 flex cursor-pointer items-center gap-[0.1px] font-rubik font-medium text-sm leading-11.75 tracking-[0.5px] px-6 py-3 rounded-full border border-[#D9DDE0] hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 text-text2">
               Get Started
               <FaArrowRight />
             </button>
 
-          </div>
+          </motion.div>
         ))}
-
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
